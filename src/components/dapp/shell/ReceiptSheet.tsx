@@ -102,7 +102,7 @@ export function ReceiptSheet() {
             {item?.block ? <Row label="Block">#{formatInteger(item.block)}</Row> : null}
             {item?.feeEth ? <Row label="Network fee">{formatAmount(item.feeEth)} ETH</Row> : null}
             {wallet.address ? <Row label="From">{shortAddress(wallet.address)}</Row> : null}
-            <Row label="To">Definica</Row>
+            <Row label="To">Definomi</Row>
             <Row label="Transaction">
               <CopyHash hash={receipt} />
             </Row>

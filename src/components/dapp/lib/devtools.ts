@@ -8,7 +8,7 @@ import { useSyncExternalStore } from "react";
  * `?devtools=1` to turn them on, `?devtools=0` to turn them off again; the choice is remembered here.
  */
 
-const KEY = "definica.app.devtools";
+const KEY = "definomi.app.devtools";
 const listeners = new Set<() => void>();
 
 function read(): boolean {

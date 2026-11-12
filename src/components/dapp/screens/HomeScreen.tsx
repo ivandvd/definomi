@@ -193,7 +193,7 @@ export function VaultCard() {
       <ProgressBar value={vault.totalAssetsEth / vault.capacityEth} tone={capacityLeft <= 0 ? "amber" : "green"} label="Vault capacity used" />
       <div className="row-divide mt-2">
         <Row label="Share price" value={<Amount value={vault.sharePriceEth} asset="ETH" digits={4} isPublic />} hint={`${formatPercent(vault.sharePriceChange30dPct)} over 30 days`} />
-        <Row label="Fees" value={`${formatBps(vault.feeBps.vault + vault.feeBps.definica)} of rewards`} hint={`Vault ${formatBps(vault.feeBps.vault)} · Definica ${formatBps(vault.feeBps.definica)}`} />
+        <Row label="Fees" value={`${formatBps(vault.feeBps.vault + vault.feeBps.definomi)} of rewards`} hint={`Vault ${formatBps(vault.feeBps.vault)} · Definomi ${formatBps(vault.feeBps.definomi)}`} />
         <Row label="Minimum deposit" value={<Amount value={vault.minDepositEth} asset="ETH" digits={2} isPublic />} />
         <Row
           label="Next harvest"

@@ -15,7 +15,7 @@ export interface WalletAccount {
   description?: string;
 }
 
-/** Definica runs on Ethereum mainnet; anything else is the wrong network. */
+/** Definomi runs on Ethereum mainnet; anything else is the wrong network. */
 export const SUPPORTED_CHAIN_ID = 1;
 
 export const CHAIN_NAMES: Record<number, string> = {

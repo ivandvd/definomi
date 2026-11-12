@@ -1,6 +1,6 @@
 import { OG_CONTENT_TYPE, OG_SIZE, shareImage } from "@/lib/og";
 
-export const alt = "The Definica app: stake ETH, follow every layer of your position and unstake when you choose.";
+export const alt = "The Definomi app: stake ETH, follow every layer of your position and unstake when you choose.";
 export const size = OG_SIZE;
 export const contentType = OG_CONTENT_TYPE;
 

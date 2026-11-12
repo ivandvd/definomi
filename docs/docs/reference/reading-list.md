@@ -1,12 +1,12 @@
 ---
 title: 'Reading list'
-description: 'The StakeWise, Aave and Ethereum documentation behind the mechanics Definica builds on.'
+description: 'The StakeWise, Aave and Ethereum documentation behind the mechanics Definomi builds on.'
 sidebar_position: 1
 ---
 
 # Reading list
 
-Definica builds on StakeWise V3, Aave V3 Ethereum and Ethereum's proof-of-stake. Their owners' documentation is the best place to go deeper on the mechanics these docs summarise.
+Definomi builds on StakeWise V3, Aave V3 Ethereum and Ethereum's proof-of-stake. Their owners' documentation is the best place to go deeper on the mechanics these docs summarise.
 
 ## StakeWise
 

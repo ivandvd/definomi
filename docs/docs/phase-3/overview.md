@@ -10,7 +10,7 @@ import DocCardList from '@theme/DocCardList';
 
 # Phase 3 — Borrowing markets
 
-Phase 3 runs Definica's [borrowing markets](/glossary#borrowing-markets): you borrow a supported asset against approved ETH or ETH-correlated collateral, under published collateral, interest and liquidation rules. The liquidity comes from Phase 2 [funding loans](/glossary#funding-loan) and from [direct ETH supply](/glossary#direct-eth-supply). Of the interest attributable to a liquidity participant, 75% is allocated to the participant and 25% to Definica.
+Phase 3 runs Definomi's [borrowing markets](/glossary#borrowing-markets): you borrow a supported asset against approved ETH or ETH-correlated collateral, under published collateral, interest and liquidation rules. The liquidity comes from Phase 2 [funding loans](/glossary#funding-loan) and from [direct ETH supply](/glossary#direct-eth-supply). Of the interest attributable to a liquidity participant, 75% is allocated to the participant and 25% to Definomi.
 
 ## What Phase 3 does
 
@@ -27,7 +27,7 @@ flowchart TB
   L["Phase 3<br/>lending market"] -->|"lends"| B(["Borrower"])
   B -->|"collateral, interest"| L
   L -->|"75% of interest"| P["Liquidity<br/>participant"]
-  L -->|"25% of interest"| DF["Definica"]
+  L -->|"25% of interest"| DF["Definomi"]
 ```
 
 Borrowers post approved collateral, borrow a supported asset and pay interest. Direct ETH supply is your own ETH, with no Aave funding debt. If the collateral value falls, the debt grows or the position otherwise crosses its liquidation threshold, some or all of the collateral can be sold through [liquidation](/phase-3/liquidation).
@@ -40,7 +40,7 @@ Borrowers post approved collateral, borrow a supported asset and pay interest. D
 | Direct ETH supplier | Own ETH | 75% of attributable lending interest | Lending losses; exits through Phase 3 withdrawals |
 | Borrower | Approved collateral | A supported asset | Interest, oracle risk and liquidation risk |
 
-Definica coordinates the markets and receives 25% of attributable lending interest. Its share supports development, operations and budgeted treasury and incentive programmes.
+Definomi coordinates the markets and receives 25% of attributable lending interest. Its share supports development, operations and budgeted treasury and incentive programmes.
 
 ## Market rules
 

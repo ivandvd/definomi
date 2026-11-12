@@ -26,7 +26,7 @@ import { ActionButton, DocsLink, FormProblem, MiniStat, SplitLayout, StakingTabs
 const GAS_RESERVE = 0.003;
 
 const STEPS: { glyph: GlyphName; title: string; text: string }[] = [
-  { glyph: "definica-core", title: "Your ETH goes in", text: "Definica sends it to the dedicated StakeWise Vault and records your position." },
+  { glyph: "definomi-core", title: "Your ETH goes in", text: "Definomi sends it to the dedicated StakeWise Vault and records your position." },
   { glyph: "vault-shares", title: "You hold Vault shares", text: "They are your proportion of the Vault's assets, so they stay worth your share of it." },
   { glyph: "validators", title: "Rewards arrive", text: "Validators run by the selected operator earn rewards, which reach every share at each harvest, net of fees." },
 ];
@@ -95,7 +95,7 @@ function StakeForm({ flow }: { flow: ReturnType<typeof useTxFlow> }) {
           {vault ? (
             <div className="rounded-[14px] bg-canvas px-4 py-1">
               <Row label="Share price" value={<Amount value={vault.sharePriceEth} asset="ETH" isPublic digits={4} />} />
-              <Row label="Fees" value={`${formatBps(vault.feeBps.vault + vault.feeBps.definica)} of rewards`} hint="Taken from rewards, never from your deposit" className="border-t border-line-soft" />
+              <Row label="Fees" value={`${formatBps(vault.feeBps.vault + vault.feeBps.definomi)} of rewards`} hint="Taken from rewards, never from your deposit" className="border-t border-line-soft" />
             </div>
           ) : null}
           <FormProblem message={problems.form} />

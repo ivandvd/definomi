@@ -50,11 +50,11 @@ export function downloadCalendarEvent(event: CalendarEvent) {
   const lines = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
-    "PRODID:-//Definica//App//EN",
+    "PRODID:-//Definomi//App//EN",
     "CALSCALE:GREGORIAN",
     "METHOD:PUBLISH",
     "BEGIN:VEVENT",
-    `UID:${event.id}@definica.com`,
+    `UID:${event.id}@definomi.com`,
     `DTSTAMP:${icsTime(Date.now())}`,
     `DTSTART:${icsTime(event.at)}`,
     `DTEND:${icsTime(event.at + 30 * 60_000)}`,
@@ -100,9 +100,9 @@ export function AddToCalendar({ event, children = "Add to calendar", ...rest }: 
 /** The reminder for a lock's maturity. */
 export const lockReminder = (lock: { id: string; shares: number; maturesAt: number }, shares: string): CalendarEvent => ({
   id: `lock-${lock.id}`,
-  title: "Your Definica share lock matures",
-  description: `Your lock of ${shares} Vault shares matures now. Release it in the Definica app to use the shares again.`,
+  title: "Your Definomi share lock matures",
+  description: `Your lock of ${shares} Vault shares matures now. Release it in the Definomi app to use the shares again.`,
   at: lock.maturesAt,
   path: "/app/locks",
-  filename: "definica-lock-matures.ics",
+  filename: "definomi-lock-matures.ics",
 });

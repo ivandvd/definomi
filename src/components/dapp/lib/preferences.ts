@@ -21,7 +21,7 @@ export const DEFAULT_PREFERENCES: Preferences = {
   positionUnit: "eth",
 };
 
-const STORAGE_KEY = "definica.app.preferences";
+const STORAGE_KEY = "definomi.app.preferences";
 
 let current: Preferences | null = null;
 const listeners = new Set<() => void>();

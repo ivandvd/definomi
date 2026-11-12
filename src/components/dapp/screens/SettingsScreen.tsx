@@ -209,7 +209,7 @@ const HELP: { title: string; links: { label: string; href: string; external?: bo
     ],
   },
   {
-    title: "Definica",
+    title: "Definomi",
     links: [
       { label: "Roadmap", href: LINKS.roadmap },
       { label: "Telegram", href: LINKS.telegram, external: true },
@@ -423,9 +423,9 @@ export function SettingsScreen() {
           {env.preview && devTools ? <DevTools /> : null}
           <HelpCard />
           <p className="px-1 text-xs text-ink-3">
-            Definica app ·{" "}
+            Definomi app ·{" "}
             <a href={LINKS.site} className="underline-offset-4 hover:underline">
-              definica.com
+              definomi.com
             </a>
           </p>
         </div>

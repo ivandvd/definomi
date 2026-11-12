@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/site";
 
-/** The site's public pages. The docs publish their own sitemap on docs.definica.com. */
+/** The site's public pages. The docs publish their own sitemap on docs.definomi.com. */
 const PAGES: { path: string; changeFrequency: "weekly" | "monthly" | "yearly"; priority: number }[] = [
   { path: "/", changeFrequency: "weekly", priority: 1 },
   { path: "/staking", changeFrequency: "monthly", priority: 0.9 },

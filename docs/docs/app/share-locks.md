@@ -6,7 +6,7 @@ sidebar_position: 5
 
 # Share locks
 
-The Share locks screen, **Locks** in the app's navigation, lets you lock some of your Vault shares in DefinicaCore for 7 to 365 days, with up to 10 lock positions open at a time. It lists every lock with its maturity and releases matured locks back to your available shares. Locked shares stay in reward accounting throughout.
+The Share locks screen, **Locks** in the app's navigation, lets you lock some of your Vault shares in DefinomiCore for 7 to 365 days, with up to 10 lock positions open at a time. It lists every lock with its maturity and releases matured locks back to your available shares. Locked shares stay in reward accounting throughout.
 
 On a wide screen the **New lock** form sits on the right; on a phone it comes after your lock positions and **What a lock does**.
 

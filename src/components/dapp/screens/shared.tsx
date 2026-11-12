@@ -280,7 +280,7 @@ export function ReturnsCard() {
   if (!lines.length) return null;
   return (
     <Card>
-      <CardHeader title="Where your return comes from" hint="Each source on its own line. Definica never blends them into one rate." />
+      <CardHeader title="Where your return comes from" hint="Each source on its own line. Definomi never blends them into one rate." />
       <ul className="row-divide">
         {lines.map((line, i) => (
           <li key={`${line.id}-${i}`} className="flex items-center gap-3 py-3">

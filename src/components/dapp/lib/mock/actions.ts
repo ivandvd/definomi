@@ -58,7 +58,7 @@ const healthTone = (value: number): ChangeLine["tone"] => {
 function gate(world: World, action: Action): Problem | null {
   const { sim } = world;
   if (sim.stale) return { code: "stale", message: "The figures on screen are out of date. Wait for them to refresh before you confirm." };
-  if (sim.restriction === "blocked") return { code: "restricted", message: "This address can't use Definica." };
+  if (sim.restriction === "blocked") return { code: "restricted", message: "This address can't use Definomi." };
   if (sim.restriction === "region" && OPENS_POSITION.has(action.type))
     return { code: "restricted", message: "New positions aren't available in your region. Exits, claims, releases and repayments stay open." };
   const phase = ACTION_PHASE[action.type];
@@ -77,7 +77,7 @@ const blank = (action: Action): ActionPreview => ({
   conditions: [],
   warnings: [],
   steps: [],
-  contract: { name: "DefinicaCore", address: null, method: "" },
+  contract: { name: "DefinomiCore", address: null, method: "" },
   networkFeeEth: TX_FEE,
   problem: null,
 });
@@ -118,13 +118,13 @@ export function previewAction(world: World, account: AccountState | null, action
         { label: "Vault", value: vault.name },
         { label: "Share price", value: amountOf(price, "ETH") },
         { label: "Vault fee", value: `${formatBps(vault.feeBps.vault)} of rewards` },
-        { label: "Definica fee", value: `${formatBps(vault.feeBps.definica)} of rewards` },
+        { label: "Definomi fee", value: `${formatBps(vault.feeBps.definomi)} of rewards` },
         { label: "Minimum deposit", value: amountOf(vault.minDepositEth, "ETH", 2) },
         { label: "Capacity left", value: amountOf(capacityLeft, "ETH", 2) },
       ];
       preview.warnings = [{ level: "info", text: "Rewards depend on validator performance and are not guaranteed. Fees come out of rewards, never your deposit." }];
       preview.steps = [{ label: "Stake ETH", kind: "transaction" }];
-      preview.contract = { name: "DefinicaCore", address: null, method: "deposit" };
+      preview.contract = { name: "DefinomiCore", address: null, method: "deposit" };
       preview.problem = firstProblem(
         gated,
         !vault.activated && { code: "notActive", message: "Deposits open once the Vault has registered validators." },
@@ -152,7 +152,7 @@ export function previewAction(world: World, account: AccountState | null, action
         { label: "In the exit queue", before: fmt(position?.exitingShares ?? 0), after: fmt((position?.exitingShares ?? 0) + shares) },
       ];
       preview.conditions = [
-        { label: "Route", value: route === "core" ? "Through Definica" : "Directly at the Vault" },
+        { label: "Route", value: route === "core" ? "Through Definomi" : "Directly at the Vault" },
         { label: "Estimated ETH", value: amountOf(estimate, "ETH"), hint: "At today's share price; the amount paid follows the Vault's accounting." },
         { label: "From available liquidity", value: amountOf(fromLiquidity, "ETH") },
         ...(fromExits > 0 ? [{ label: "After validator exits", value: amountOf(fromExits, "ETH") }] : []),
@@ -172,7 +172,7 @@ export function previewAction(world: World, account: AccountState | null, action
         { level: "caution", text: "A request can't be cancelled once it is in the queue." },
       ];
       preview.steps = [{ label: "Request exit", kind: "transaction" }];
-      preview.contract = route === "core" ? { name: "DefinicaCore", address: null, method: "requestExit" } : { name: "Staking Vault", address: null, method: "enterExitQueue" };
+      preview.contract = route === "core" ? { name: "DefinomiCore", address: null, method: "requestExit" } : { name: "Staking Vault", address: null, method: "enterExitQueue" };
       preview.problem = firstProblem(
         gated,
         !position && { code: "invalid", message: "There are no shares to exit." },
@@ -199,12 +199,12 @@ export function previewAction(world: World, account: AccountState | null, action
       ];
       preview.conditions = [
         { label: read.length === 1 ? "Request" : "Requests", value: read.length === 1 ? `Requested ${formatDate(read[0].requestedAt)}` : `${read.length} exits` },
-        { label: "Route", value: direct ? "Directly at the Vault" : "Through Definica" },
+        { label: "Route", value: direct ? "Directly at the Vault" : "Through Definomi" },
         ...(read.some((exit) => exit.status === "partial") ? [{ label: "Partial claim", value: "The rest stays in the queue" }] : []),
         { label: "Paid to", value: "Your wallet" },
       ];
       preview.steps = [{ label: read.length > 1 ? `Claim ${read.length} exits` : "Claim ETH", kind: "transaction" }];
-      preview.contract = direct ? { name: "Staking Vault", address: null, method: "claimExitedAssets" } : { name: "DefinicaCore", address: null, method: "claimExits" };
+      preview.contract = direct ? { name: "Staking Vault", address: null, method: "claimExitedAssets" } : { name: "DefinomiCore", address: null, method: "claimExits" };
       preview.problem = firstProblem(gated, !(claimable > 0) && { code: "notMatured", message: "Nothing is claimable yet." }, ethProblem(account, 0, TX_FEE));
       return preview;
     }
@@ -228,7 +228,7 @@ export function previewAction(world: World, account: AccountState | null, action
       ];
       preview.warnings = [{ level: "caution", text: "Locked shares can't exit before the lock matures, and there is no early unlock." }];
       preview.steps = [{ label: "Lock shares", kind: "transaction" }];
-      preview.contract = { name: "DefinicaCore", address: null, method: "lock" };
+      preview.contract = { name: "DefinomiCore", address: null, method: "lock" };
       preview.problem = firstProblem(
         gated,
         !position && { code: "invalid", message: "There are no shares to lock. Stake ETH first." },
@@ -257,7 +257,7 @@ export function previewAction(world: World, account: AccountState | null, action
           ]
         : [{ label: "Locks", value: `${locks.length} matured locks` }];
       preview.steps = [{ label: locks.length > 1 ? `Release ${locks.length} locks` : "Release shares", kind: "transaction" }];
-      preview.contract = { name: "DefinicaCore", address: null, method: "releaseLocks" };
+      preview.contract = { name: "DefinomiCore", address: null, method: "releaseLocks" };
       preview.problem = firstProblem(
         gated,
         !locks.length && { code: "invalid", message: "Choose a lock to release." },
@@ -555,7 +555,7 @@ export function previewAction(world: World, account: AccountState | null, action
       preview.conditions = [
         { label: "Supply rate", value: `${formatPercent(market.supplyRatePct)} a year, variable`, hint: "Before the 75 / 25 split" },
         { label: "Allocated to you", value: "75% of the interest attributable to you" },
-        { label: "Allocated to Definica", value: "25%" },
+        { label: "Allocated to Definomi", value: "25%" },
         { label: "Utilisation", value: formatPercent(market.utilisationPct, 1) },
         { label: supplying ? "Withdrawals" : "Withdrawable now", value: supplying ? "Up to the unborrowed liquidity at the time" : amountOf(Math.min(supplied, market.liquidity), "ETH") },
       ];
@@ -628,7 +628,7 @@ export function applyAction(world: World, account: AccountState, action: Action,
         claimedAt: null,
         ticket: `${200 + world.idCount} ${String(now % 1000).padStart(3, "0")} ${String(world.txCount * 37).padStart(3, "0").slice(-3)}`,
       });
-      record(world, account, "exit-request", now, estimate, "ETH", `${formatAmount(action.shares)} shares · ${action.route === "core" ? "through Definica" : "at the Vault"}`, hash);
+      record(world, account, "exit-request", now, estimate, "ETH", `${formatAmount(action.shares)} shares · ${action.route === "core" ? "through Definomi" : "at the Vault"}`, hash);
       return;
     }
     case "claimExits": {

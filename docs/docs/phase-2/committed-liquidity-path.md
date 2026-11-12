@@ -43,7 +43,7 @@ A compatible aEthosETH receipt that you already hold joins Entry A at the aEthos
 
 ## Entry B in detail
 
-1. **Stake** ETH in a separate StakeWise factory Vault that supports osToken minting. This is not Definica's Phase 1 Vault.
+1. **Stake** ETH in a separate StakeWise factory Vault that supports osToken minting. This is not Definomi's Phase 1 Vault.
 2. **Mint osETH** against your Vault shares. This opens an [osToken position](/glossary#ostoken-position) with an LTV limit (90% in Standard Vaults) and a liquidation threshold (92% in those Vaults). The StakeWise DAO's 5% fee on osToken rewards accrues to the debt.
 3. **Supply and commit** as in Entry A.
 
@@ -51,7 +51,7 @@ Minting osETH against stake leaves an osETH liability at the originating Vault, 
 
 ## Why the Phase 1 Vault is not an entry
 
-Definica's Phase 1 Vault, [EthPooledStakingVault](/glossary#eth-pooled-staking-vault), is based on EthFoxVault and does not mint osETH. That is a property of the Vault type, which omits StakeWise's osToken module entirely. To go from ETH to osETH you use Entry B's minting Vault. If you hold Phase 1 shares, you exit Phase 1 through the [exit queue](/phase-1/exits-and-withdrawals) and enter Phase 2 separately.
+Definomi's Phase 1 Vault, [EthPooledStakingVault](/glossary#eth-pooled-staking-vault), is based on EthFoxVault and does not mint osETH. That is a property of the Vault type, which omits StakeWise's osToken module entirely. To go from ETH to osETH you use Entry B's minting Vault. If you hold Phase 1 shares, you exit Phase 1 through the [exit queue](/phase-1/exits-and-withdrawals) and enter Phase 2 separately.
 
 ## What the Module records at commitment
 

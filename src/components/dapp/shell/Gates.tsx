@@ -28,7 +28,7 @@ export function Gates() {
             <ShieldOff className="size-6" aria-hidden="true" />
           </span>
           <h2 id="blocked-title" className="mt-4 text-xl font-extrabold">
-            This address can&apos;t use Definica
+            This address can&apos;t use Definomi
           </h2>
           <p className="mt-2 text-sm leading-5 text-ink-2">
             It did not pass the screening every address goes through. If you think this is a mistake, contact the team through the official channels.
@@ -58,7 +58,7 @@ export function Gates() {
       <label className="flex cursor-pointer gap-3 rounded-[16px] bg-card p-4 text-[13px] leading-5 text-ink-2">
         <input type="checkbox" className="mt-0.5 size-4 shrink-0 accent-[#0f0f0f]" checked={ticked} onChange={(event) => setTicked(event.target.checked)} />
         <span>
-          I am 18 or over, not subject to sanctions, not in a region where Definica is restricted and not using a VPN to get round a restriction. I accept the{" "}
+          I am 18 or over, not subject to sanctions, not in a region where Definomi is restricted and not using a VPN to get round a restriction. I accept the{" "}
           <Link href={LINKS.terms} target="_blank" className="font-semibold text-ink underline">
             Terms
           </Link>{" "}

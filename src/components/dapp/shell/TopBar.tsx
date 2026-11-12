@@ -28,7 +28,7 @@ export function TopBar() {
   return (
     <header className="sticky top-0 z-30 bg-canvas/85 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-[1240px] items-center gap-2 px-4 sm:px-6 lg:h-[76px] lg:px-8">
-        <a href={LINKS.site} aria-label="Definica website" className="mr-auto lg:hidden">
+        <a href={LINKS.site} aria-label="Definomi website" className="mr-auto lg:hidden">
           <MarkTile />
         </a>
         <div className="mr-auto hidden lg:block">

@@ -6,7 +6,7 @@ sidebar_position: 4
 
 # Market and liquidity risk
 
-osETH rates and Aave conditions change over time. A position that reaches into Phase 2 or Phase 3 depends on markets Definica does not control: Aave's utilisation and caps, osETH's exchange rate and market price, and the liquidity available at each layer when you want to leave. Even in Phase 1, the Vault's own liquidity decides whether an exit is quick or slow.
+osETH rates and Aave conditions change over time. A position that reaches into Phase 2 or Phase 3 depends on markets Definomi does not control: Aave's utilisation and caps, osETH's exchange rate and market price, and the liquidity available at each layer when you want to leave. Even in Phase 1, the Vault's own liquidity decides whether an exit is quick or slow.
 
 ## Liquidity at three layers
 
@@ -34,7 +34,7 @@ Aave values osETH through an adapter anchored to the exchange rate, so a market 
 
 ## Concentration
 
-Everything in Definica's design is ETH-correlated: the stake, osETH, aEthosETH, the funding loan and the Phase 3 collateral. A fall in ETH's price does not change the ETH-denominated accounting, but it changes what the position is worth in any other currency, and it tends to coincide with high utilisation and crowded exits. See [Correlation is not safety](/risks/correlation-is-not-safety).
+Everything in Definomi's design is ETH-correlated: the stake, osETH, aEthosETH, the funding loan and the Phase 3 collateral. A fall in ETH's price does not change the ETH-denominated accounting, but it changes what the position is worth in any other currency, and it tends to coincide with high utilisation and crowded exits. See [Correlation is not safety](/risks/correlation-is-not-safety).
 
 ## What you can verify
 

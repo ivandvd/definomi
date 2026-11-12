@@ -24,7 +24,7 @@ export function ConnectDialog({ open, onOpenChange }: { open: boolean; onOpenCha
   const [accepted, setAccepted] = useState(false);
 
   return (
-    <ResponsiveSheet open={open} onOpenChange={onOpenChange} title="Connect a wallet" description="Definica never asks for your seed phrase or private key.">
+    <ResponsiveSheet open={open} onOpenChange={onOpenChange} title="Connect a wallet" description="Definomi never asks for your seed phrase or private key.">
       <label
         className={cn(
           "flex cursor-pointer gap-3 rounded-[16px] bg-card p-4 text-[13px] leading-5 text-ink-2 transition-shadow",
@@ -33,7 +33,7 @@ export function ConnectDialog({ open, onOpenChange }: { open: boolean; onOpenCha
       >
         <input type="checkbox" className="mt-0.5 size-4 shrink-0 accent-[#0f0f0f]" checked={accepted} onChange={(event) => setAccepted(event.target.checked)} />
         <span>
-          I am 18 or over, not subject to sanctions, not in a region where Definica is restricted and not using a VPN to get round a restriction. I accept the{" "}
+          I am 18 or over, not subject to sanctions, not in a region where Definomi is restricted and not using a VPN to get round a restriction. I accept the{" "}
           <Link href={LINKS.terms} className="font-semibold text-ink underline" target="_blank">
             Terms
           </Link>{" "}

@@ -1,12 +1,12 @@
 ---
 title: 'Positions and rewards'
-description: 'What a Definica position consists of, where its rewards come from, how they reach you at each harvest, and how fees and penalties appear.'
+description: 'What a Definomi position consists of, where its rewards come from, how they reach you at each harvest, and how fees and penalties appear.'
 sidebar_position: 3
 ---
 
 # Positions and rewards
 
-A Definica position is a proportion of the aggregate [Vault shares](/glossary#vault-shares) held by [DefinicaCore](/glossary#definica-core). Its ETH value is that proportion multiplied by the Vault's share price, so it rises when the Vault's validators earn and falls when they are penalised. Rewards reach your position without any action on your part and are never paid out as a separate token.
+A Definomi position is a proportion of the aggregate [Vault shares](/glossary#vault-shares) held by [DefinomiCore](/glossary#definomi-core). Its ETH value is that proportion multiplied by the Vault's share price, so it rises when the Vault's validators earn and falls when they are penalised. Rewards reach your position without any action on your part and are never paid out as a separate token.
 
 ## What a position is made of
 
@@ -47,9 +47,9 @@ In symbols: if a harvest reports a net gain `G` and the fee rate is `f`, shares 
 
 ## Treasury contributions are shown separately
 
-ETH donations and share burns by Definica's [multisig](/glossary#multisig) also raise the share price. They are discretionary and budget-dependent and never a guaranteed APY, so they are reported as their own component, separate from validator performance, and never blended into a headline figure. See [Treasury policy](/phase-1/treasury-policy).
+ETH donations and share burns by Definomi's [multisig](/glossary#multisig) also raise the share price. They are discretionary and budget-dependent and never a guaranteed APY, so they are reported as their own component, separate from validator performance, and never blended into a headline figure. See [Treasury policy](/phase-1/treasury-policy).
 
-The same rule applies across Definica: staking performance, Aave supply interest and any Definica incentives are always reported as separate components. Any rate the app shows is informational, not a promise.
+The same rule applies across Definomi: staking performance, Aave supply interest and any Definomi incentives are always reported as separate components. Any rate the app shows is informational, not a promise.
 
 ## Taking rewards out
 

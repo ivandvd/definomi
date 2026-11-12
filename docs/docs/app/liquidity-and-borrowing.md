@@ -20,7 +20,7 @@ The path runs in three steps:
 
 1. **Supply osETH to Aave V3 Ethereum.** The supplied position is represented by aEthosETH, the [aToken](/glossary#atoken) of the osETH reserve.
 2. **Lock the aEthosETH position.** The [Main Liquidity Module](/glossary#main-liquidity-module) records custody and keeps the [commitment](/glossary#commitment) for a fixed duration.
-3. **Optionally fund lending markets.** With your authorisation, an eligible position supports a [funding loan](/glossary#funding-loan) of WETH or another permitted asset, which supplies Definica's lending markets.
+3. **Optionally fund lending markets.** With your authorisation, an eligible position supports a [funding loan](/glossary#funding-loan) of WETH or another permitted asset, which supplies Definomi's lending markets.
 
 You enter with osETH you already hold or a compatible aEthosETH receipt, or with osETH minted against ETH staked in a separate StakeWise factory Vault: see [Entry A and Entry B](/glossary#entry-a-and-entry-b). Vault shares from the Stake screen are not a way in, because the staking Vault does not mint osETH.
 
@@ -95,7 +95,7 @@ The screen's **What applies to every market** card lists four rules:
 
 ### Where lending liquidity comes from
 
-Market liquidity comes from funding loans through the Liquidity Module and from [direct ETH supply](/glossary#direct-eth-supply): your own ETH, with no Aave funding debt, supplied through the screen's **Lend ETH** card. Of the [attributable lending interest](/glossary#attributable-lending-interest), 75% is allocated to the participant and 25% to Definica, before financing costs. A financed participant's net result is `0.75 × I_u − funding costs − other costs`, which can be negative. See [Economics](/phase-3/economics).
+Market liquidity comes from funding loans through the Liquidity Module and from [direct ETH supply](/glossary#direct-eth-supply): your own ETH, with no Aave funding debt, supplied through the screen's **Lend ETH** card. Of the [attributable lending interest](/glossary#attributable-lending-interest), 75% is allocated to the participant and 25% to Definomi, before financing costs. A financed participant's net result is `0.75 × I_u − funding costs − other costs`, which can be negative. See [Economics](/phase-3/economics).
 
 ## When Aave refuses an action
 

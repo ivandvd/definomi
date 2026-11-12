@@ -168,7 +168,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("/sites/definica/shared/fonts/TomatoGrotesk-Regular.woff2") format("woff2");
+  src: url("/sites/definomi/shared/fonts/TomatoGrotesk-Regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -176,7 +176,7 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("/sites/definica/shared/fonts/TomatoGrotesk-Medium.woff2") format("woff2");
+  src: url("/sites/definomi/shared/fonts/TomatoGrotesk-Medium.woff2") format("woff2");
 }
 
 @font-face {
@@ -184,7 +184,7 @@
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url("/sites/definica/shared/fonts/TomatoGrotesk-SemiBold.woff2") format("woff2");
+  src: url("/sites/definomi/shared/fonts/TomatoGrotesk-SemiBold.woff2") format("woff2");
 }
 
 @font-face {
@@ -192,7 +192,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("/sites/definica/shared/fonts/TomatoGrotesk-Bold.woff2") format("woff2");
+  src: url("/sites/definomi/shared/fonts/TomatoGrotesk-Bold.woff2") format("woff2");
 }
 
 /* The walkthrough's headline weight (the site maps its 700 to this cut). */
@@ -201,7 +201,7 @@
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: url("/sites/definica/shared/fonts/TomatoGrotesk-ExtraBold.woff2") format("woff2");
+  src: url("/sites/definomi/shared/fonts/TomatoGrotesk-ExtraBold.woff2") format("woff2");
 }
 
 @layer base {

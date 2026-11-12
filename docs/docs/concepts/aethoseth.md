@@ -37,9 +37,9 @@ See [Withdrawal constraints](/glossary#withdrawal-constraints) in the glossary.
 
 ## Supplying is not using as collateral
 
-Supplying liquidity and using an asset as collateral are separate actions. Committing aEthosETH to the Module does not make it collateral; the relevant market must enable collateral use explicitly. In Aave, collateral use is a per-asset flag on your account, and in Definica any funding loan against the supplied position requires your explicit authorisation.
+Supplying liquidity and using an asset as collateral are separate actions. Committing aEthosETH to the Module does not make it collateral; the relevant market must enable collateral use explicitly. In Aave, collateral use is a per-asset flag on your account, and in Definomi any funding loan against the supplied position requires your explicit authorisation.
 
-## Role in Definica
+## Role in Definomi
 
 | Phase | Role |
 |---|---|
@@ -48,7 +48,7 @@ Supplying liquidity and using an asset as collateral are separate actions. Commi
 
 ## What you can verify
 
-- The aEthosETH and osETH reserve addresses, from the BGD Labs Aave address book. These are Aave's contracts, not Definica's; see [Verify addresses](/security/verify-addresses).
+- The aEthosETH and osETH reserve addresses, from the BGD Labs Aave address book. These are Aave's contracts, not Definomi's; see [Verify addresses](/security/verify-addresses).
 - The reserve's state, supply cap and current supply rate, via `getReserveData` on the Aave Pool.
 
 ## Related

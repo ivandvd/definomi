@@ -1,6 +1,6 @@
-# Definica Docs
+# Definomi Docs
 
-The Definica documentation site, built with [Docusaurus](https://docusaurus.io/) 3 (classic preset, TypeScript, Docusaurus Faster, Mermaid, local search). It uses the landing page's design system: Tomato Grotesk, ink on white, the lime call-to-action colour, the four pastel tones and the hand-drawn blob. Light theme only.
+The Definomi documentation site, built with [Docusaurus](https://docusaurus.io/) 3 (classic preset, TypeScript, Docusaurus Faster, Mermaid, local search). It uses the landing page's design system: Tomato Grotesk, ink on white, the lime call-to-action colour, the four pastel tones and the hand-drawn blob. Light theme only.
 
 ## Commands
 
@@ -22,7 +22,7 @@ docs/                     # all pages (.md, parsed as MDX); the sidebar is gener
   app/ risks/ security/
   roadmap.md faq.md glossary.md
   reference/
-src/css/custom.css        # Definica theme: fonts, palette, Infima mapping, cards, admonitions, footer
+src/css/custom.css        # Definomi theme: fonts, palette, Infima mapping, cards, admonitions, footer
 src/components/Cards      # branded link cards with the blob badge (used on the Introduction and Roadmap)
 src/theme/                # swizzled DocCard (blob badge, no emoji), Footer, MDXComponents, Mermaid
 static/fonts static/img   # Tomato Grotesk woff2, logo and favicons
@@ -31,7 +31,7 @@ static/fonts static/img   # Tomato Grotesk woff2, logo and favicons
 ## Authoring rules
 
 - Every page starts with front matter (`title`, `description`, `sidebar_position`); quote values that contain `: `. The description shows on cards, so keep it to one plain sentence.
-- Write in the present tense about how Definica behaves. Say "Phase 1/2/3", never "Stage". No status labels, no APR/APY figures, dates or Definica addresses; values that vary per Vault or market are "shown in the app before you confirm".
+- Write in the present tense about how Definomi behaves. Say "Phase 1/2/3", never "Stage". No status labels, no APR/APY figures, dates or Definomi addresses; values that vary per Vault or market are "shown in the app before you confirm".
 - Explicit heading IDs use the escaped form `## Heading \{#custom-id\}` (the site runs with `future.v4`, which disables the MDX1 compat shims).
 - Admonition titles use the directive label form: `:::tip[Before you sign]`.
 - Avoid raw `<`, `>` and `{` in prose; put expressions in backticks.

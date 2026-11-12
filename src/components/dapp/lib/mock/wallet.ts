@@ -3,7 +3,7 @@ import type { Address, AssetAmount } from "../types";
 import { DISCONNECTED_WALLET, SUPPORTED_CHAIN_ID, type WalletAccount, type WalletAdapter, type WalletConnector, type WalletState } from "../wallet";
 import { PREVIEW_ADDRESSES } from "./world";
 
-const STORAGE_KEY = "definica.app.wallet";
+const STORAGE_KEY = "definomi.app.wallet";
 
 const CONNECTORS: WalletConnector[] = [
   { id: "injected", name: "Browser wallet", description: "MetaMask, Rabby or another extension" },

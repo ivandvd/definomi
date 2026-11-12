@@ -6,13 +6,13 @@ sidebar_position: 1
 
 # Vault shares
 
-Your Phase 1 position is a number of Vault shares, not an ETH balance. Each share is a proportional claim on the assets of Definica's dedicated Vault, and its ETH value, `P = A / S`, moves with the Vault's net performance after fees.
+Your Phase 1 position is a number of Vault shares, not an ETH balance. Each share is a proportional claim on the assets of Definomi's dedicated Vault, and its ETH value, `P = A / S`, moves with the Vault's net performance after fees.
 
 ## What a share is
 
-A StakeWise [Vault](/glossary#vault) does not keep a per-user ETH balance. It keeps a total of accounted assets and a total of [shares](/glossary#vault-shares), and each share is a proportional claim on those assets. Definica's Vault, [EthPooledStakingVault](/concepts/eth-pooled-staking-vault), is a non-ERC-20 Vault of the [EthFoxVault](/glossary#ethfoxvault) type, so its shares are ledger entries, not tokens you can move between wallets.
+A StakeWise [Vault](/glossary#vault) does not keep a per-user ETH balance. It keeps a total of accounted assets and a total of [shares](/glossary#vault-shares), and each share is a proportional claim on those assets. Definomi's Vault, [EthPooledStakingVault](/concepts/eth-pooled-staking-vault), is a non-ERC-20 Vault of the [EthFoxVault](/glossary#ethfoxvault) type, so its shares are ledger entries, not tokens you can move between wallets.
 
-[DefinicaCore](/concepts/definica-core) holds the aggregate shares issued for Definica deposits and records what proportion of them belongs to each user.
+[DefinomiCore](/concepts/definomi-core) holds the aggregate shares issued for Definomi deposits and records what proportion of them belongs to each user.
 
 ## How it works
 
@@ -49,7 +49,7 @@ Shares never rebase. When the Vault earns, each share is worth more ETH; when it
 
 ## What it means for you
 
-- Your ETH value is your shares multiplied by the current `P`, so every Definica user's value moves with the Vault's net performance in the same proportion.
+- Your ETH value is your shares multiplied by the current `P`, so every Definomi user's value moves with the Vault's net performance in the same proportion.
 - The app tracks your principal, shares, rewards, locks and exits separately, so each can be read on its own.
 - Fees reduce net performance: your position is your share of the Vault after protocol and operator fees. The fees that apply are set per Vault and shown in the app before you confirm; see [Fees](/phase-1/fees).
 

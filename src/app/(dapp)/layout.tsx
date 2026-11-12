@@ -5,18 +5,18 @@ import { AppShell } from "@/components/dapp/shell/AppShell";
 import { MARK_D, MARK_SLASH } from "@/components/dapp/ui/brand";
 import { INDEXABLE, SITE_URL } from "@/lib/site";
 
-const description = "Stake ETH in the Definica Vault, follow every layer of your position, and unstake when you choose.";
+const description = "Stake ETH in the Definomi Vault, follow every layer of your position, and unstake when you choose.";
 
 /* Icons, the manifest and share images come from the file conventions in app/ (shared with the site). */
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: { default: "Definica App", template: "%s — Definica App" },
+  title: { default: "Definomi App", template: "%s — Definomi App" },
   description,
-  applicationName: "Definica",
+  applicationName: "Definomi",
   alternates: { canonical: "/app" },
   robots: INDEXABLE ? { index: true, follow: true } : { index: false, follow: false },
-  openGraph: { title: "Definica App", description, siteName: "Definica", locale: "en_GB", type: "website", url: "/app" },
-  twitter: { card: "summary_large_image", title: "Definica App", description, site: "@definicacom" },
+  openGraph: { title: "Definomi App", description, siteName: "Definomi", locale: "en_GB", type: "website", url: "/app" },
+  twitter: { card: "summary_large_image", title: "Definomi App", description, site: "@definomicom" },
 };
 
 export const viewport: Viewport = {
@@ -31,7 +31,7 @@ export const viewport: Viewport = {
  * host): mark the page before it paints, so the launch curtain is up from the first frame and
  * lifts with CSS. Runs once, before hydration.
  */
-const LAUNCH_SCRIPT = `try{var d=document.documentElement,s=window.sessionStorage,t=s.getItem("definica:launch"),u=new URL(window.location.href);if((t&&Date.now()-Number(t)<10000)||u.searchParams.get("launch")==="1"){d.setAttribute("data-launch","")}s.removeItem("definica:launch");if(u.searchParams.has("launch")){u.searchParams.delete("launch");history.replaceState(null,"",u.pathname+u.search+u.hash)}}catch(e){}`;
+const LAUNCH_SCRIPT = `try{var d=document.documentElement,s=window.sessionStorage,t=s.getItem("definomi:launch"),u=new URL(window.location.href);if((t&&Date.now()-Number(t)<10000)||u.searchParams.get("launch")==="1"){d.setAttribute("data-launch","")}s.removeItem("definomi:launch");if(u.searchParams.has("launch")){u.searchParams.delete("launch");history.replaceState(null,"",u.pathname+u.search+u.hash)}}catch(e){}`;
 
 /** Root layout of the app (the `(dapp)` route group has its own, separate from the landing site's). */
 export default function DappRootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

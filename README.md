@@ -1,6 +1,6 @@
-# Definica
+# Definomi
 
-Definica is a hybrid Ethereum-native staking, liquidity and collateralized borrowing protocol. This repo holds its three web surfaces:
+Definomi is a hybrid Ethereum-native staking, liquidity and collateralized borrowing protocol. This repo holds its three web surfaces:
 
 - **Landing site** — `/` and `/roadmap`: a Next.js 16 app (App Router, React 19, TypeScript) whose sections are illustrated with live GSAP-animated scenes and Lottie icons, all served locally.
 - **dApp** — `/app`: the staking app (Overview, Stake, Withdraw, Share locks, Liquidity Module, Borrow, Activity). It currently runs on a mock wallet and a mock protocol client behind typed interfaces, so the onchain wiring is a one-class swap once contract addresses are published.
@@ -38,8 +38,8 @@ npm run build      # Static docs build (fails on broken links)
 
 | Variable   | Effect                                                                                                   |
 | ---------- | -------------------------------------------------------------------------------------------------------- |
-| `DAPP_URL` | When set (e.g. `https://app.definica.com`), `/app` on the site redirects there. Unset, the dApp is served by this app. |
-| `DOCS_URL` | When set (e.g. `https://docs.definica.com` or `http://localhost:3400`), `/docs` redirects there.          |
+| `DAPP_URL` | When set (e.g. `https://app.definomi.com`), `/app` on the site redirects there. Unset, the dApp is served by this app. |
+| `DOCS_URL` | When set (e.g. `https://docs.definomi.com` or `http://localhost:3400`), `/docs` redirects there.          |
 
 ## Docker
 
@@ -57,7 +57,7 @@ src/
     (dapp)/                   dApp: its own root layout and stylesheet, app/ routes
     globals.css               Tailwind theme + utilities for the site
   components/
-    sites/definica/
+    sites/definomi/
       root-8a5edab2/          Home page, its sections, phone screens and animated scenes
       roadmap/                Roadmap page sections
       shared/                 Header, footer, app shell, shared helpers
@@ -68,11 +68,11 @@ src/
       ui/                     Buttons, cards, fields, dialog, tabs, slider, chart
       tx/                     Transaction flow (review → wallet → pending → result)
       screens/                One component per route
-  data/sites/definica/        Page content and site settings (JSON)
-  styles/sites/definica/      Site stylesheet and Definica overrides
+  data/sites/definomi/        Page content and site settings (JSON)
+  styles/sites/definomi/      Site stylesheet and Definomi overrides
 docs/                         Docusaurus documentation site (own package.json)
 public/
-  sites/definica/             Fonts, images, stickers, glyphs, Lottie files, favicons
+  sites/definomi/             Fonts, images, stickers, glyphs, Lottie files, favicons
 ```
 
 ## Wiring the dApp to the chain

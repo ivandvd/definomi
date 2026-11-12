@@ -40,11 +40,11 @@ sequenceDiagram
 4. If the harvest succeeds, ETH donated since the last harvest is added to total assets, and on profit, fee shares worth `profit × feePercent / maxFeePercent` are minted to the fee recipient.
 5. The Vault processes the exit queue: queued shares are burned and the matching ETH is set aside for claims.
 
-The result is a new share price `P = A / S`; [Vault shares](/concepts/vault-shares) shows what each step does to `A`, `S` and `P`. DefinicaCore needs no transaction: each user's proportion of Core's shares maps to the new price at once.
+The result is a new share price `P = A / S`; [Vault shares](/concepts/vault-shares) shows what each step does to `A`, `S` and `P`. DefinomiCore needs no transaction: each user's proportion of Core's shares maps to the new price at once.
 
 ## Collateralisation and the activation check
 
-`Keeper.isCollateralized(vault)` checks whether a Vault has registered validators. Once it has them, the Vault must be harvested at every subsequent reward update. DefinicaCore's [activation check](/glossary#activation-check) reads this flag: Core refuses deposits until `Keeper.isCollateralized(vault)` is true for the dedicated Vault. While it is false, the Stake screen disables staking and explains that deposits open once the Vault has registered validators.
+`Keeper.isCollateralized(vault)` checks whether a Vault has registered validators. Once it has them, the Vault must be harvested at every subsequent reward update. DefinomiCore's [activation check](/glossary#activation-check) reads this flag: Core refuses deposits until `Keeper.isCollateralized(vault)` is true for the dedicated Vault. While it is false, the Stake screen disables staking and explains that deposits open once the Vault has registered validators.
 
 ## Between harvests
 

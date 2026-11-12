@@ -1,20 +1,20 @@
 /**
- * The visitor's cookie choice, kept in one strictly necessary cookie (`definica_consent`, 12 months).
- * On definica.com it is set for the whole domain, so a choice made on the site also holds on the
+ * The visitor's cookie choice, kept in one strictly necessary cookie (`definomi_consent`, 12 months).
+ * On definomi.com it is set for the whole domain, so a choice made on the site also holds on the
  * docs and the web app; elsewhere (localhost, previews) it stays on the current host.
  * Browser-only: every function here must run after mount.
  */
 export type ConsentChoice = "granted" | "denied";
 
-const COOKIE = "definica_consent";
+const COOKIE = "definomi_consent";
 const MAX_AGE = 60 * 60 * 24 * 365;
-const OPEN_EVENT = "definica:consent-open";
+const OPEN_EVENT = "definomi:consent-open";
 
 const listeners = new Set<(choice: ConsentChoice) => void>();
 
 const domainAttribute = () => {
   const host = window.location.hostname;
-  return host === "definica.com" || host.endsWith(".definica.com") ? "; domain=.definica.com" : "";
+  return host === "definomi.com" || host.endsWith(".definomi.com") ? "; domain=.definomi.com" : "";
 };
 
 export function readConsent(): ConsentChoice | null {

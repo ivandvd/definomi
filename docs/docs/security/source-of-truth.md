@@ -10,7 +10,7 @@ The deployed contracts are the final word on what happens to your assets. This p
 
 ## The three rules
 
-These rules come from Definica's [Terms of Service]({{SITE_URL}}/terms).
+These rules come from Definomi's [Terms of Service]({{SITE_URL}}/terms).
 
 | Rule | What it means for you |
 |---|---|
@@ -26,36 +26,36 @@ These rules come from Definica's [Terms of Service]({{SITE_URL}}/terms).
 
 ## The interface is a convenience layer
 
-The interface is a convenience layer over the contracts. It does not replace the smart-contract code, your wallet's confirmation or the blockchain record. Figures it shows can be estimates or delayed: if an RPC provider or indexer fails, the app warns that estimates may be delayed or incomplete, and a queue position or wait time it shows can be an estimate. Definica can restrict access to the interface by jurisdiction, IP address, wallet address or risk signal.
+The interface is a convenience layer over the contracts. It does not replace the smart-contract code, your wallet's confirmation or the blockchain record. Figures it shows can be estimates or delayed: if an RPC provider or indexer fails, the app warns that estimates may be delayed or incomplete, and a queue position or wait time it shows can be an estimate. Definomi can restrict access to the interface by jurisdiction, IP address, wallet address or risk signal.
 
 ## Official channels
 
-These are the only accounts Definica operates:
+These are the only accounts Definomi operates:
 
 | Channel | Address |
 |---|---|
-| Website | [definica.com](https://definica.com) |
-| Telegram | [t.me/definica](https://t.me/definica) |
-| X | [x.com/definicacom](https://x.com/definicacom) |
-| General | contact@definica.com |
-| Business | business@definica.com |
-| Legal | legal@definica.com |
-| Privacy | privacy@definica.com |
-| Security | security@definica.com |
+| Website | [definomi.com](https://definomi.com) |
+| Telegram | [t.me/definomi](https://t.me/definomi) |
+| X | [x.com/definomicom](https://x.com/definomicom) |
+| General | contact@definomi.com |
+| Business | business@definomi.com |
+| Legal | legal@definomi.com |
+| Privacy | privacy@definomi.com |
+| Security | security@definomi.com |
 
-Definica's contact page has a tool that checks whether a Telegram username belongs to the team; an account it does not confirm is not part of the official Definica team. Do not share funds or credentials with unverified accounts.
+Definomi's contact page has a tool that checks whether a Telegram username belongs to the team; an account it does not confirm is not part of the official Definomi team. Do not share funds or credentials with unverified accounts.
 
-:::danger[Definica never asks for your keys]
-Never share private keys, seed phrases or recovery phrases. Definica never asks for them.
+:::danger[Definomi never asks for your keys]
+Never share private keys, seed phrases or recovery phrases. Definomi never asks for them.
 :::
 
 ## Responsible disclosure
 
-Send security reports to security@definica.com. Contact the same address before any testing that could affect users, assets, availability or confidential information.
+Send security reports to security@definomi.com. Contact the same address before any testing that could affect users, assets, availability or confidential information.
 
 ## Incident actions
 
-In response to an incident, Definica can pause the interface, recommend that users stop interacting, migrate contracts, disable a module, restrict deposits or take another technically available action. No emergency action is guaranteed to be available, timely, effective or approved. Such actions are announced through the official channels above and nowhere else.
+In response to an incident, Definomi can pause the interface, recommend that users stop interacting, migrate contracts, disable a module, restrict deposits or take another technically available action. No emergency action is guaranteed to be available, timely, effective or approved. Such actions are announced through the official channels above and nowhere else.
 
 ## Related
 

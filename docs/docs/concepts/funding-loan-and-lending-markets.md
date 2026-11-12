@@ -1,12 +1,12 @@
 ---
 title: 'Funding loan and lending markets'
-description: 'A funding loan is an optional Aave borrow against your committed aEthosETH position that supplies Definica''s Phase 3 lending markets.'
+description: 'A funding loan is an optional Aave borrow against your committed aEthosETH position that supplies Definomi''s Phase 3 lending markets.'
 sidebar_position: 10
 ---
 
 # Funding loan and lending markets
 
-A [funding loan](/glossary#funding-loan) is an optional, user-authorised Aave borrow against your committed aEthosETH position. The borrowed asset becomes liquidity for Definica's Phase 3 [borrowing markets](/glossary#borrowing-markets), where borrowers post approved ETH or ETH-correlated collateral and pay interest.
+A [funding loan](/glossary#funding-loan) is an optional, user-authorised Aave borrow against your committed aEthosETH position. The borrowed asset becomes liquidity for Definomi's Phase 3 [borrowing markets](/glossary#borrowing-markets), where borrowers post approved ETH or ETH-correlated collateral and pay interest.
 
 ## The funding loan
 
@@ -54,11 +54,11 @@ If the collateral value falls, the debt grows, or the position otherwise crosses
 
 ## The interest split
 
-Of the [lending interest attributable to you](/glossary#attributable-lending-interest), 75% is allocated to you and 25% to Definica:
+Of the [lending interest attributable to you](/glossary#attributable-lending-interest), 75% is allocated to you and 25% to Definomi:
 
 ```text
 I_u                          = lending interest attributable to the participant
-Definica revenue             = 0.25 × I_u
+Definomi revenue             = 0.25 × I_u
 User interest allocation     = 0.75 × I_u
 Financed net lending result  = 0.75 × I_u − funding costs − other applicable costs
 ```
@@ -68,7 +68,7 @@ The 25% applies to attributable Phase 3 lending interest before upstream financi
 ## What you can verify
 
 - On Aave: `getUserAccountData` (health factor, LTV, liquidation threshold, available borrows), `getReserveData` for the borrowed and osETH reserves, and `getEModeCategoryData` for the category in use.
-- On Definica: your allocated debt and income, readable onchain from the Module. Your wallet shows the Module's address before you sign; see [Verify addresses](/security/verify-addresses).
+- On Definomi: your allocated debt and income, readable onchain from the Module. Your wallet shows the Module's address before you sign; see [Verify addresses](/security/verify-addresses).
 - Each market's parameters, shown in the app before you confirm.
 
 ## Related

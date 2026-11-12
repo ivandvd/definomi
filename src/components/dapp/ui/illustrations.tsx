@@ -1,9 +1,9 @@
 "use client";
 
 import type { CSSProperties } from "react";
-import { STICKERS } from "@/components/sites/definica/root-8a5edab2/phone/stickers";
+import { STICKERS } from "@/components/sites/definomi/root-8a5edab2/phone/stickers";
 import { cn } from "@/lib/utils";
-import { DefinicaMark, EthDiamond } from "./brand";
+import { DefinomiMark, EthDiamond } from "./brand";
 
 /* The walkthrough's pictures, as live components: the coin card, the padlock, the sticker burst. */
 
@@ -80,7 +80,7 @@ export function Padlock({ locked, size = 38, className }: { locked: boolean; siz
 }
 
 /**
- * The walkthrough's intro: the Definica mark with the brand stickers around it. They pop out on
+ * The walkthrough's intro: the Definomi mark with the brand stickers around it. They pop out on
  * mount and then drift gently. Decorative.
  */
 export function StickerBurst({ className, scale = 1 }: { className?: string; scale?: number }) {
@@ -106,7 +106,7 @@ export function StickerBurst({ className, scale = 1 }: { className?: string; sca
           );
         })}
         <div className="absolute -top-10 -left-9 flex h-20 w-[72px] animate-pop items-center justify-center">
-          <DefinicaMark className="h-20 w-[72px]" color="#0f0f0f" />
+          <DefinomiMark className="h-20 w-[72px]" color="#0f0f0f" />
         </div>
       </div>
     </div>

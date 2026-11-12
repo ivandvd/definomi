@@ -1,7 +1,7 @@
 ---
 title: 'Using the app'
 sidebar_label: 'Overview'
-description: 'How the Definica app is organised on a wide screen and on a phone, the Home screen, the steps behind every transaction and the states that apply across the app.'
+description: 'How the Definomi app is organised on a wide screen and on a phone, the Home screen, the steps behind every transaction and the states that apply across the app.'
 sidebar_position: 1
 slug: /app
 ---
@@ -10,7 +10,7 @@ import DocCardList from '@theme/DocCardList';
 
 # Using the app
 
-The [Definica app]({{APP_URL}}) is where you stake ETH, follow your position, unstake, and lock and release Vault shares. It reads your position from the chain and prepares each transaction for you to sign in your own wallet; it never takes custody of your ETH or shares.
+The [Definomi app]({{APP_URL}}) is where you stake ETH, follow your position, unstake, and lock and release Vault shares. It reads your position from the chain and prepares each transaction for you to sign in your own wallet; it never takes custody of your ETH or shares.
 
 ## How the app is organised
 
@@ -35,7 +35,7 @@ The top bar shows how fresh the figures are, as **Live · updated … ago**, the
 
 ### On a phone
 
-The top bar holds the Definica mark, which returns to Home, the network, the bell and your wallet button. The tab bar at the bottom holds **Home**, **Stake**, the Definica hexagon, **Activity** and **Settings**.
+The top bar holds the Definomi mark, which returns to Home, the network, the bell and your wallet button. The tab bar at the bottom holds **Home**, **Stake**, the Definomi hexagon, **Activity** and **Settings**.
 
 The hexagon opens a sheet, **Where to?**, that lists Stake, Unstake, Locks and Activity, then Liquidity and Borrow marked **Coming soon**, with anything ready to collect on top: an exit to claim or a lock to release, each with its button. A dot on the hexagon tells you something is waiting. Stake, Unstake and Locks share a switch at the top of each of those screens, with the same badges as the sidebar. The phone layout also applies to a narrow window on a computer.
 
@@ -54,9 +54,9 @@ Once you connect, Home shows your position.
 | Your position | Its value in ETH or in Vault shares, lifetime rewards, the ETH deposited, a chart, and the Available, Locked, In the exit queue and Share price figures. See [Your position](#your-position) below. |
 | Needs you | Exits ready to claim and locks that have matured, each with its button (**Claim**, **Claim all** or **Release**), or a line saying nothing is waiting |
 | Your layers | Vault shares, with **Stake more**, **Unstake** and **Lock shares** in its menu, then the Liquidity Module and Borrowing, each marked **Coming soon**. Each layer is on its own line, never added together. |
-| Where your return comes from | Staking rewards, treasury contributions and penalties, each on its own line with what it is. Definica never blends them into one rate. |
+| Where your return comes from | Staking rewards, treasury contributions and penalties, each on its own line with what it is. Definomi never blends them into one rate. |
 | Quick actions | **Stake**, **Unstake**, **Lock** and **Activity** |
-| Vault | The Vault's name, network and operator, whether it is **Active** or **Activating**, the capacity used, the share price and its change over 30 days, fees as a share of rewards (the Vault's and Definica's), the minimum deposit and the next harvest |
+| Vault | The Vault's name, network and operator, whether it is **Active** or **Activating**, the capacity used, the share price and its change over 30 days, fees as a share of rewards (the Vault's and Definomi's), the minimum deposit and the next harvest |
 | Recent activity | Your five latest entries, with **All** opening [Activity](/app/activity) |
 
 A note at the foot of the screen repeats that no return is guaranteed: rewards depend on validator performance, and the app never shows a projected rate. It links to [Risks](/risks).
@@ -94,7 +94,7 @@ When a transaction completes, the app reloads your position, exit requests, lock
 
 ### Receipts
 
-Every transaction has a receipt, titled **Transaction**. It opens from **View transaction** on the result or in the notification, from a transaction in the bell, and from an entry in [Activity](/app/activity) or under **Recent activity** on Home. The receipt shows what the transaction did and its status (**Confirmed**, **Pending** or **Failed**), the amount, the date, the network, the block and the network fee once they are known, the address it came from and **Definica** as its destination, and the transaction hash with a button to copy it. **View on Etherscan** opens the transaction on the block explorer.
+Every transaction has a receipt, titled **Transaction**. It opens from **View transaction** on the result or in the notification, from a transaction in the bell, and from an entry in [Activity](/app/activity) or under **Recent activity** on Home. The receipt shows what the transaction did and its status (**Confirmed**, **Pending** or **Failed**), the amount, the date, the network, the block and the network fee once they are known, the address it came from and **Definomi** as its destination, and the transaction hash with a button to copy it. **View on Etherscan** opens the transaction on the block explorer.
 
 ## What the app always shows you
 
@@ -102,7 +102,7 @@ Every transaction has a receipt, titled **Transaction**. It opens from **View tr
 - **What changes.** Each review shows the figures the action changes, before and after, and the estimated network fee.
 - **Each return layer on its own.** Staking rewards, treasury contributions and penalties are never blended, and the app shows no projected rate or APY.
 - **How fresh the figures are.** The top bar says when the figures were last read, and confirming pauses when they are out of date.
-- **Your signature on every action.** The app prepares transactions; only your wallet can send them. Check the contract, network and amount your wallet shows before you approve; [Verify addresses](/security/verify-addresses) sets out how to check a Definica address.
+- **Your signature on every action.** The app prepares transactions; only your wallet can send them. Check the contract, network and amount your wallet shows before you approve; [Verify addresses](/security/verify-addresses) sets out how to check a Definomi address.
 
 ## States across the app
 
@@ -116,7 +116,7 @@ Some states apply to every screen. They show as a banner above the screen, or st
 | No connection | **Can't reach the network**, with **Try again** | Nothing new loads until the app reaches the network |
 | Outdated app | **This version of the app is no longer safe to use**, with **Reload** | Reload before you sign anything |
 | Regional restriction | **New positions aren't available in your region** | Exits, claims, releases and repayments; staking and new locks are closed |
-| Failed screening | **This address can't use Definica**, with only **Disconnect** | Nothing |
+| Failed screening | **This address can't use Definomi**, with only **Disconnect** | Nothing |
 | Terms to accept | **Before you continue**, or **The Terms have changed** when a new version applies, with **Accept and continue** and **Disconnect** | Nothing until you accept |
 
 You accept the Terms for each address in the connect dialog, and the app asks again when they change. See [Connect a wallet](/app/connect-a-wallet).
@@ -126,7 +126,7 @@ You accept the Terms for each address in the connect dialog, and the app asks ag
 - **Wallet.** The connected address with **Copy**, the network (with **Switch to Ethereum** when your wallet is on another one), the wallet you connected with, the version of the Terms accepted for the address, and **Disconnect**. Without a wallet, the card offers **Connect wallet**.
 - **Display.** Kept on this device only: **Hide balances**, **Decimals** (2 or 4 places) and **Your position in** (ETH or Vault shares, for the headline on Home).
 - **Privacy and data.** The app sets no cookies and sends no analytics. **Clear data on this device** forgets your display choices and the remembered wallet connection, after you confirm. Your position is untouched; you connect your wallet again afterwards.
-- **Help and legal.** Under **Learn**: how to use the app, this documentation, the risks and [Verify addresses](/security/verify-addresses). Under **Definica**: the roadmap, Telegram, X, the Terms and the Privacy Policy.
+- **Help and legal.** Under **Learn**: how to use the app, this documentation, the risks and [Verify addresses](/security/verify-addresses). Under **Definomi**: the roadmap, Telegram, X, the Terms and the Privacy Policy.
 
 ## In this section
 

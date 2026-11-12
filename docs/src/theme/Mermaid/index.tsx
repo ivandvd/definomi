@@ -8,7 +8,7 @@ import {
 import type {Props} from '@theme/Mermaid';
 
 /**
- * Definica's Mermaid renderer.
+ * Definomi's Mermaid renderer.
  *
  * 1. Fonts first. Mermaid measures every label when it lays a diagram out. If that happens while
  *    the fallback font is showing, boxes are sized for Arial and the Tomato Grotesk labels are

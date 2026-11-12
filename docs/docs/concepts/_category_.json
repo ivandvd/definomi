@@ -7,6 +7,6 @@
     "type": "generated-index",
     "title": "Concepts",
     "slug": "/concepts",
-    "description": "The building blocks of Definica, one page each: Vault shares, DefinicaCore, the dedicated Vault, harvests, the exit queue, share locks, the treasury, osETH, aEthosETH, the Main Liquidity Module and the funding loan."
+    "description": "The building blocks of Definomi, one page each: Vault shares, DefinomiCore, the dedicated Vault, harvests, the exit queue, share locks, the treasury, osETH, aEthosETH, the Main Liquidity Module and the funding loan."
   }
 }

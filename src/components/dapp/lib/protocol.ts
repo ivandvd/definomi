@@ -162,7 +162,7 @@ export class ProtocolError extends Error {
 /**
  * Everything the app reads from, and sends to, the protocol. The screens only ever talk to this
  * interface: the preview client serves sample data, and an onchain client (wagmi + viem, the
- * published addresses and a Definica indexer for per-account history) replaces it without
+ * published addresses and a Definomi indexer for per-account history) replaces it without
  * touching the UI.
  */
 export interface ProtocolClient {

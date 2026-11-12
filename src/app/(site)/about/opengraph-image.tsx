@@ -1,6 +1,6 @@
 import { OG_CONTENT_TYPE, OG_SIZE, shareImage } from "@/lib/og";
 
-export const alt = "About Definica — No hidden mechanics.";
+export const alt = "About Definomi — No hidden mechanics.";
 export const size = OG_SIZE;
 export const contentType = OG_CONTENT_TYPE;
 

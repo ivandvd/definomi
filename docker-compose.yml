@@ -4,8 +4,8 @@ services:
       context: .
       dockerfile: Dockerfile
       target: runner
-    image: definica:latest
-    container_name: definica
+    image: definomi:latest
+    container_name: definomi
     restart: unless-stopped
     ports:
       - "${PORT:-3000}:3000"
@@ -28,8 +28,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.dev
-    image: definica:dev
-    container_name: definica-dev
+    image: definomi:dev
+    container_name: definomi-dev
     restart: unless-stopped
     ports:
       - "${DEV_PORT:-3001}:3000"

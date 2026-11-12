@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://docs.definica.com/sitemap.xml
+Sitemap: https://docs.definomi.com/sitemap.xml

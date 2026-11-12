@@ -1,6 +1,6 @@
 import { OG_CONTENT_TYPE, OG_SIZE, shareImage } from "@/lib/og";
 
-export const alt = "The Definica roadmap — Stake, lock, borrow.";
+export const alt = "The Definomi roadmap — Stake, lock, borrow.";
 export const size = OG_SIZE;
 export const contentType = OG_CONTENT_TYPE;
 

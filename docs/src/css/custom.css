@@ -1,9 +1,9 @@
 /**
- * Definica Docs — theme.
+ * Definomi Docs — theme.
  *
  * The docs share the landing page's design system: Tomato Grotesk, ink on white, the lime
  * call-to-action colour, the four pastel tones and the hand-drawn blob. Infima variables are
- * mapped to those values here; Definica's own tokens are prefixed `--df-`. Light theme only.
+ * mapped to those values here; Definomi's own tokens are prefixed `--df-`. Light theme only.
  */
 
 /* ---------- Tomato Grotesk (self-hosted, same weights as the landing page) ---------- */
@@ -43,7 +43,7 @@
 /* ---------- Tokens and Infima mapping ---------- */
 
 :root {
-  /* Definica palette (see src/styles/sites/definica in the main repo) */
+  /* Definomi palette (see src/styles/sites/definomi in the main repo) */
   --df-white: #ffffff;
   --df-grey: rgb(249, 250, 249);
   --df-grey-2: rgb(236, 239, 236);

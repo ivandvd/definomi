@@ -1,22 +1,22 @@
 ---
 title: 'EthPooledStakingVault'
-description: 'EthPooledStakingVault is Definica''s dedicated StakeWise Vault: based on EthFoxVault, it pools ETH, funds validators and mints no osETH.'
+description: 'EthPooledStakingVault is Definomi''s dedicated StakeWise Vault: based on EthFoxVault, it pools ETH, funds validators and mints no osETH.'
 sidebar_position: 5
 ---
 
 # EthPooledStakingVault
 
-[EthPooledStakingVault](/glossary#eth-pooled-staking-vault) is Definica's dedicated staking Vault and the share layer of Phase 1. It is a StakeWise [Vault](/glossary#vault) based on [EthFoxVault](/glossary#ethfoxvault): it accepts ETH only and does not mint osETH.
+[EthPooledStakingVault](/glossary#eth-pooled-staking-vault) is Definomi's dedicated staking Vault and the share layer of Phase 1. It is a StakeWise [Vault](/glossary#vault) based on [EthFoxVault](/glossary#ethfoxvault): it accepts ETH only and does not mint osETH.
 
 ## How it works
 
-The Vault pools the ETH that [DefinicaCore](/concepts/definica-core) forwards and funds validators, 32 ETH each, that the selected [operator](/glossary#operator) runs. It reflects rewards and penalties through share accounting at each [harvest](/concepts/keeper-and-harvests), runs the [exit queue](/concepts/exit-queue) and mints fee shares to the fee recipient. It is an [ERC-1967 proxy](/glossary#erc-1967-proxy) with its own admin and a StakeWise-approved implementation path.
+The Vault pools the ETH that [DefinomiCore](/concepts/definomi-core) forwards and funds validators, 32 ETH each, that the selected [operator](/glossary#operator) runs. It reflects rewards and penalties through share accounting at each [harvest](/concepts/keeper-and-harvests), runs the [exit queue](/concepts/exit-queue) and mints fee shares to the fee recipient. It is an [ERC-1967 proxy](/glossary#erc-1967-proxy) with its own admin and a StakeWise-approved implementation path.
 
 A StakeWise Vault is an isolated staking pool: a contract that takes deposits, distributes rewards and handles withdrawals without a custodian. Vaults do not socialise risk. Each deposit funds only that Vault's validators, and its rewards and penalties stay inside that Vault. A Vault's admin can upgrade it only to implementations the StakeWise DAO has registered.
 
 ## What it inherits from EthFoxVault
 
-EthFoxVault is StakeWise's custom non-ERC-20 Vault with a blocklist, its own MEV escrow and no osToken minting, in the `stakewise/v3-core` repository. StakeWise built it for Consensys/MetaMask staking. Definica's Vault inherits these features:
+EthFoxVault is StakeWise's custom non-ERC-20 Vault with a blocklist, its own MEV escrow and no osToken minting, in the `stakewise/v3-core` repository. StakeWise built it for Consensys/MetaMask staking. Definomi's Vault inherits these features:
 
 | Feature | What it means |
 |---|---|
@@ -29,7 +29,7 @@ EthFoxVault is StakeWise's custom non-ERC-20 Vault with a blocklist, its own MEV
 | Donation functions | `donateAssets()` and `donateShares()`, which the [treasury](/concepts/treasury) uses. |
 | Upgradeability | Upgrades only to DAO-registered implementations of the same type, one version at a time. |
 
-Consensys Diligence reviewed EthFoxVault for StakeWise. That review covers StakeWise's contract, not Definica's version of it; see [Audits](/security/audits). The diff from EthFoxVault, the source revisions and compiler settings, and the proxy and implementation addresses are part of Definica's [release evidence](/security/release-evidence).
+Consensys Diligence reviewed EthFoxVault for StakeWise. That review covers StakeWise's contract, not Definomi's version of it; see [Audits](/security/audits). The diff from EthFoxVault, the source revisions and compiler settings, and the proxy and implementation addresses are part of Definomi's [release evidence](/security/release-evidence).
 
 ## Registry admission
 
@@ -57,6 +57,6 @@ StakeWise's [VaultsRegistry](/glossary#vaults-registry) is the canonical onchain
 
 ## Related
 
-- [DefinicaCore](/concepts/definica-core)
+- [DefinomiCore](/concepts/definomi-core)
 - [Keeper and harvests](/concepts/keeper-and-harvests)
 - [Controls and upgrades](/phase-1/controls-and-upgrades)

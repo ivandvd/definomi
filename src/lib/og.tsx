@@ -332,7 +332,7 @@ export interface ShareImageOptions {
   host?: string;
 }
 
-export async function shareImage({ eyebrow, title, text, graphic, host = "definica.com" }: ShareImageOptions) {
+export async function shareImage({ eyebrow, title, text, graphic, host = "definomi.com" }: ShareImageOptions) {
   return new ImageResponse(
     (
       <div
@@ -349,7 +349,7 @@ export async function shareImage({ eyebrow, title, text, graphic, host = "defini
         <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", flex: 1 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
             <Mark size={46} />
-            <div style={{ display: "flex", fontSize: 44, fontWeight: 600, letterSpacing: -1 }}>Definica</div>
+            <div style={{ display: "flex", fontSize: 44, fontWeight: 600, letterSpacing: -1 }}>Definomi</div>
           </div>
           <div style={{ display: "flex", flexDirection: "column" }}>
             {eyebrow ? (

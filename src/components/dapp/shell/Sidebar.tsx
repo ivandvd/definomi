@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { useDapp } from "../providers/DappProvider";
-import { DefinicaLogo } from "../ui/brand";
+import { DefinomiLogo } from "../ui/brand";
 import { GearIcon } from "../ui/icons";
 import { SoonPill } from "../ui/Pill";
 import { isCurrent, LINKS, MORE, NAV, type NavItem } from "./nav";
@@ -46,8 +46,8 @@ export function Sidebar() {
     <aside className="sticky top-0 hidden h-dvh w-[272px] shrink-0 p-3 lg:block">
       <div className="flex h-full flex-col rounded-[24px] bg-card px-3 pt-5 pb-3 shadow-[0_1px_0_rgba(15,15,15,0.04),0_12px_32px_-24px_rgba(15,15,15,0.3)]">
         {/* The logo goes to the website's landing page, like the docs' logo. */}
-        <a href={LINKS.site} aria-label="Definica website" className="flex items-center gap-2 px-3">
-          <DefinicaLogo className="h-[23px]" />
+        <a href={LINKS.site} aria-label="Definomi website" className="flex items-center gap-2 px-3">
+          <DefinomiLogo className="h-[23px]" />
           <span className="rounded-[6px] bg-lime px-1.5 py-0.5 text-[10.5px] font-bold tracking-wide">APP</span>
         </a>
 

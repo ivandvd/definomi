@@ -11,8 +11,8 @@ import {openConsentSettings} from '@site/src/lib/consent';
  */
 const SOCIALS = [
   {
-    label: 'Definica on X',
-    href: 'https://x.com/definicacom',
+    label: 'Definomi on X',
+    href: 'https://x.com/definomicom',
     icon: (
       <svg viewBox="0 0 17 17" aria-hidden="true" focusable="false">
         <path
@@ -23,8 +23,8 @@ const SOCIALS = [
     ),
   },
   {
-    label: 'Definica on Telegram',
-    href: 'https://t.me/definica',
+    label: 'Definomi on Telegram',
+    href: 'https://t.me/definomi',
     icon: (
       <svg viewBox="0 0 21 18" aria-hidden="true" focusable="false">
         <path

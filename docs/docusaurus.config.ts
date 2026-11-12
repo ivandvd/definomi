@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
-/** Definica palette used by the Mermaid theme (the stylesheet carries the same values). */
+/** Definomi palette used by the Mermaid theme (the stylesheet carries the same values). */
 const INK = '#0f0f0f';
 const GRAPHIC_INK = '#001405';
 const WHITE = '#ffffff';
@@ -16,14 +16,14 @@ const FONT = '"Tomato Grotesk", Arial, sans-serif';
 
 /**
  * Where the website and the app are. Set SITE_URL and APP_URL at build time when they move to
- * definica.com; until then they are the Vercel addresses. Markdown can use {{SITE_URL}} and
+ * definomi.com; until then they are the Vercel addresses. Markdown can use {{SITE_URL}} and
  * {{APP_URL}} in links.
  */
 const SITE_URL = (process.env.SITE_URL ?? 'https://definica-flame.vercel.app').replace(/\/$/, '');
 const APP_URL = (process.env.APP_URL ?? 'https://app-definica.vercel.app/app').replace(/\/$/, '');
 
 const config: Config = {
-  title: 'Definica Docs',
+  title: 'Definomi Docs',
   tagline: 'Pooled ETH staking, committed liquidity and borrowing, explained',
   favicon: 'img/favicon.ico',
 
@@ -32,11 +32,11 @@ const config: Config = {
     faster: true,
   },
 
-  url: 'https://docs.definica.com',
+  url: 'https://docs.definomi.com',
   baseUrl: '/',
 
-  organizationName: 'definica',
-  projectName: 'definica-docs',
+  organizationName: 'definomi',
+  projectName: 'definomi-docs',
 
   onBrokenLinks: 'throw',
   onBrokenAnchors: 'throw',
@@ -159,7 +159,7 @@ const config: Config = {
       {
         name: 'description',
         content:
-          'Documentation for Definica: pooled ETH staking through a dedicated StakeWise Vault, the Main Liquidity Module for osETH supplied to Aave V3, and borrowing markets for ETH-correlated collateral.',
+          'Documentation for Definomi: pooled ETH staking through a dedicated StakeWise Vault, the Main Liquidity Module for osETH supplied to Aave V3, and borrowing markets for ETH-correlated collateral.',
       },
     ],
     // The docs always look like the landing page: light only.
@@ -282,7 +282,7 @@ const config: Config = {
       title: '',
       hideOnScroll: false,
       logo: {
-        alt: 'Definica',
+        alt: 'Definomi',
         src: 'img/logo.svg',
         // The logo goes to the website's landing page, as in the app.
         href: SITE_URL,
@@ -317,7 +317,7 @@ const config: Config = {
     footer: {
       style: 'light',
       logo: {
-        alt: 'Definica',
+        alt: 'Definomi',
         src: 'img/logo.svg',
         href: SITE_URL,
         width: 115,
@@ -347,11 +347,11 @@ const config: Config = {
             {label: 'Docs', to: '/'},
             {label: 'FAQ', to: '/faq'},
             {label: 'Glossary', to: '/glossary'},
-            {label: 'Community', href: 'https://t.me/definica'},
+            {label: 'Community', href: 'https://t.me/definomi'},
           ],
         },
       ],
-      copyright: '© 2026 Definica',
+      copyright: '© 2026 Definomi',
     },
     prism: {
       theme: prismThemes.github,

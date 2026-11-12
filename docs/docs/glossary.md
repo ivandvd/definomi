@@ -1,18 +1,18 @@
 ---
 title: 'Glossary'
-description: 'Every term used in these docs, defined once and grouped by layer: Definica, StakeWise, Aave and Ethereum.'
+description: 'Every term used in these docs, defined once and grouped by layer: Definomi, StakeWise, Aave and Ethereum.'
 sidebar_position: 11
 ---
 
 # Glossary
 
-Each term is defined once here and linked from its first use on other pages. Terms are grouped by the layer they belong to: Definica's own contracts and mechanisms, then the StakeWise, Aave and Ethereum infrastructure Definica builds on.
+Each term is defined once here and linked from its first use on other pages. Terms are grouped by the layer they belong to: Definomi's own contracts and mechanisms, then the StakeWise, Aave and Ethereum infrastructure Definomi builds on.
 
-## Definica
+## Definomi
 
 ### Activation check \{#activation-check\}
 
-A gate in DefinicaCore linked to Keeper collateralisation. StakeWise's `Keeper.isCollateralized(vault)` becomes true once the Vault has registered validators, and Core accepts deposits only after that. See [Keeper and harvests](/concepts/keeper-and-harvests).
+A gate in DefinomiCore linked to Keeper collateralisation. StakeWise's `Keeper.isCollateralized(vault)` becomes true once the Vault has registered validators, and Core accepts deposits only after that. See [Keeper and harvests](/concepts/keeper-and-harvests).
 
 ### aEthosETH \{#aethoseth\}
 
@@ -20,7 +20,7 @@ The Aave V3 Ethereum aToken for the osETH reserve, officially named Aave Ethereu
 
 ### Attributable lending interest (I<sub>u</sub>) \{#attributable-lending-interest\}
 
-The Phase 3 lending interest allocated to a participant. It is split 75% to the participant and 25% to Definica, before upstream financing costs; the split applies to interest, not to deposited principal or net profit. See [Economics](/phase-3/economics).
+The Phase 3 lending interest allocated to a participant. It is split 75% to the participant and 25% to Definomi, before upstream financing costs; the split applies to interest, not to deposited principal or net profit. See [Economics](/phase-3/economics).
 
 ### Beneficiary \{#beneficiary\}
 
@@ -34,9 +34,9 @@ Phase 3: lending markets in which borrowers post approved ETH or ETH-correlated 
 
 Placing an aEthosETH position under the Main Liquidity Module's accounting for a fixed duration, also called an aEthosETH lock-up. The Module records custody, the commitment period and any debt allocated to the position. See [Main Liquidity Module](/concepts/main-liquidity-module).
 
-### DefinicaCore \{#definica-core\}
+### DefinomiCore \{#definomi-core\}
 
-The user-facing accounting layer. Core receives deposits, holds the aggregate Vault shares and attributes each economic position to an individual user, including locks and exit positions. See [DefinicaCore](/concepts/definica-core).
+The user-facing accounting layer. Core receives deposits, holds the aggregate Vault shares and attributes each economic position to an individual user, including locks and exit positions. See [DefinomiCore](/concepts/definomi-core).
 
 ### Direct ETH supply \{#direct-eth-supply\}
 
@@ -44,7 +44,7 @@ Phase 3 liquidity from your own ETH. It enters the lending markets without Aave 
 
 ### Donator role \{#donator-role\}
 
-A Core role, held by Definica's multisig, that may call `donateAllAssets()` on Core, which forwards ETH to `donateAssets()` on the Vault. See [Treasury](/concepts/treasury).
+A Core role, held by Definomi's multisig, that may call `donateAllAssets()` on Core, which forwards ETH to `donateAssets()` on the Vault. See [Treasury](/concepts/treasury).
 
 ### Entry A and Entry B \{#entry-a-and-entry-b\}
 
@@ -56,7 +56,7 @@ The treasury route in which the multisig adds ETH to the Vault without minting s
 
 ### EthPooledStakingVault \{#eth-pooled-staking-vault\}
 
-Definica's dedicated StakeWise Vault and its staking and Vault-share layer. It is based on EthFoxVault, accepts ETH only and does not mint osETH. See [EthPooledStakingVault](/concepts/eth-pooled-staking-vault).
+Definomi's dedicated StakeWise Vault and its staking and Vault-share layer. It is based on EthFoxVault, accepts ETH only and does not mint osETH. See [EthPooledStakingVault](/concepts/eth-pooled-staking-vault).
 
 ### Funding loan \{#funding-loan\}
 
@@ -76,7 +76,7 @@ What happens when an exit handled through Core is only partly claimable: the cla
 
 ### Multisig \{#multisig\}
 
-A wallet that needs several signers to execute a transaction. Definica's multisig executes treasury contributions; its signers and threshold are readable from the multisig contract itself.
+A wallet that needs several signers to execute a transaction. Definomi's multisig executes treasury contributions; its signers and threshold are readable from the multisig contract itself.
 
 ### Referrer \{#referrer\}
 
@@ -92,13 +92,13 @@ The treasury route in which the multisig burns Vault shares it owns through `don
 
 ### Upgrade authoriser \{#upgrade-authoriser\}
 
-The DefinicaCore role that pre-authorises an upgrade. It approves exactly one implementation at a time, the approval is consumed when the upgrade runs, and the role is distinct from Core's admin. See [Controls and upgrades](/phase-1/controls-and-upgrades).
+The DefinomiCore role that pre-authorises an upgrade. It approves exactly one implementation at a time, the approval is consumed when the upgrade runs, and the role is distinct from Core's admin. See [Controls and upgrades](/phase-1/controls-and-upgrades).
 
 ## StakeWise
 
 ### Blocklist and blocklist manager \{#blocklist\}
 
-A Vault feature that accepts deposits from any wallet except those on a blocklist. The blocklist manager can add or remove blocked addresses and, in EthFoxVault, can call `ejectUser`, which moves a user's shares into the exit queue. EthFoxVault, the base of Definica's Vault, includes this feature.
+A Vault feature that accepts deposits from any wallet except those on a blocklist. The blocklist manager can add or remove blocked addresses and, in EthFoxVault, can call `ejectUser`, which moves a user's shares into the exit queue. EthFoxVault, the base of Definomi's Vault, includes this feature.
 
 ### Capacity \{#capacity\}
 
@@ -110,7 +110,7 @@ The minimum time between entering a Vault's exit queue and claiming the exited E
 
 ### EthFoxVault \{#ethfoxvault\}
 
-A custom StakeWise Vault type in `v3-core`: an Ethereum Vault with non-transferable shares, a blocklist and its own MEV escrow, without osToken minting. It was built for Consensys and MetaMask staking and reviewed by Consensys Diligence. Definica's Vault is based on it. See [EthPooledStakingVault](/concepts/eth-pooled-staking-vault).
+A custom StakeWise Vault type in `v3-core`: an Ethereum Vault with non-transferable shares, a blocklist and its own MEV escrow, without osToken minting. It was built for Consensys and MetaMask staking and reviewed by Consensys Diligence. Definomi's Vault is based on it. See [EthPooledStakingVault](/concepts/eth-pooled-staking-vault).
 
 ### Exit queue \{#exit-queue\}
 
@@ -138,7 +138,7 @@ With its own escrow, a Vault collects the block proposal rewards of its own vali
 
 ### Operator and Operator Service \{#operator\}
 
-An operator runs the validators of a Vault. The Operator Service automates validator registration, consolidations, withdrawals, state updates and fee claims. Definica's Vault uses a selected operator, which runs the node and validator clients.
+An operator runs the validators of a Vault. The Operator Service automates validator registration, consolidations, withdrawals, state updates and fee claims. Definomi's Vault uses a selected operator, which runs the node and validator clients.
 
 ### Oracles \{#oracles\}
 
@@ -158,7 +158,7 @@ osETH can be redeemed for ETH at its fair exchange rate through a queue: you ent
 
 ### Vault shares \{#vault-shares\}
 
-The accounting units every StakeWise Vault uses to represent a proportional stake in the Vault: `shares = assets × S / A` and `assets = shares × A / S`. Shares are non-transferable in Definica's Vault type. See [Vault shares](/concepts/vault-shares).
+The accounting units every StakeWise Vault uses to represent a proportional stake in the Vault: `shares = assets × S / A` and `assets = shares × A / S`. Shares are non-transferable in Definomi's Vault type. See [Vault shares](/concepts/vault-shares).
 
 ### Unbonded ETH \{#unbonded-eth\}
 
@@ -242,7 +242,7 @@ Withdrawing redeems aTokens for the underlying asset, including accrued interest
 
 ### ERC-1967 proxy \{#erc-1967-proxy\}
 
-The standard storage location a proxy uses for the address of the logic contract it delegates to. StakeWise Vaults and DefinicaCore each use a separate ERC-1967 proxy, which preserves state across upgrades.
+The standard storage location a proxy uses for the address of the logic contract it delegates to. StakeWise Vaults and DefinomiCore each use a separate ERC-1967 proxy, which preserves state across upgrades.
 
 ### Slashing \{#slashing\}
 
@@ -250,7 +250,7 @@ The destruction of part of a validator's stake and its ejection from the network
 
 ### Transient-storage reentrancy guard \{#transient-storage-reentrancy-guard\}
 
-A reentrancy lock built on EIP-1153 `TSTORE` and `TLOAD`, whose state is discarded after every transaction. DefinicaCore uses one.
+A reentrancy lock built on EIP-1153 `TSTORE` and `TLOAD`, whose state is discarded after every transaction. DefinomiCore uses one.
 
 ### Validator exit queue (Ethereum) \{#validator-exit-queue\}
 

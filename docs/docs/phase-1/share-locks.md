@@ -1,12 +1,12 @@
 ---
 title: 'Share locks'
-description: 'Locking Vault shares in DefinicaCore for 7 to 365 days, with up to 10 open lock positions, and what happens at maturity.'
+description: 'Locking Vault shares in DefinomiCore for 7 to 365 days, with up to 10 open lock positions, and what happens at maturity.'
 sidebar_position: 5
 ---
 
 # Share locks
 
-A Phase 1 [share lock](/glossary#share-lock) commits a chosen number of your Vault shares in [DefinicaCore](/glossary#definica-core) for 7 to 365 days, with up to 10 lock positions open at once. Locked shares stay in reward accounting, so they earn and lose exactly as unlocked shares do; what they cannot do is enter the exit queue before maturity.
+A Phase 1 [share lock](/glossary#share-lock) commits a chosen number of your Vault shares in [DefinomiCore](/glossary#definomi-core) for 7 to 365 days, with up to 10 lock positions open at once. Locked shares stay in reward accounting, so they earn and lose exactly as unlocked shares do; what they cannot do is enter the exit queue before maturity.
 
 ## How a lock works
 

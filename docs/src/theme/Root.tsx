@@ -28,8 +28,8 @@ function CookieIcon() {
 }
 
 /**
- * Wraps every docs page: the cookie banner (the same choice as on definica.com, shared through the
- * `definica_consent` cookie) and a PostHog page view per route once the visitor accepts.
+ * Wraps every docs page: the cookie banner (the same choice as on definomi.com, shared through the
+ * `definomi_consent` cookie) and a PostHog page view per route once the visitor accepts.
  */
 export default function Root({children}: {children: ReactNode}): ReactNode {
   const {siteConfig} = useDocusaurusContext();
@@ -70,7 +70,7 @@ export default function Root({children}: {children: ReactNode}): ReactNode {
           <h2 className="df-cookie__title">Cookies</h2>
         </div>
         <p className="df-cookie__text">
-          We use analytics cookies to understand how Definica is used. They’re only set if you accept.{' '}
+          We use analytics cookies to understand how Definomi is used. They’re only set if you accept.{' '}
           <a href={`${String(siteConfig.customFields?.siteUrl ?? '')}/privacy`} tabIndex={open ? 0 : -1}>
             Privacy policy
           </a>

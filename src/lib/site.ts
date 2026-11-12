@@ -1,12 +1,12 @@
 /**
- * Where Definica lives, for metadata, share images, robots.txt and the sitemap (see .env.example).
+ * Where Definomi lives, for metadata, share images, robots.txt and the sitemap (see .env.example).
  * The defaults are the production hosts.
  */
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://definica.com").replace(/\/$/, "");
-export const DOCS_URL = (process.env.NEXT_PUBLIC_DOCS_URL ?? "https://docs.definica.com").replace(/\/$/, "");
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://definomi.com").replace(/\/$/, "");
+export const DOCS_URL = (process.env.NEXT_PUBLIC_DOCS_URL ?? "https://docs.definomi.com").replace(/\/$/, "");
 
 /**
- * The website's address for links from the app, which can sit on its own host (app-definica…,
+ * The website's address for links from the app, which can sit on its own host (app-definomi…,
  * where `/` opens the app). Empty when NEXT_PUBLIC_SITE_URL is unset, as in local development,
  * so links stay on this host.
  */

@@ -6,7 +6,7 @@ sidebar_position: 5
 
 # Borrowing risk
 
-Any borrow in Definica creates a debt that grows with variable interest, is valued by an oracle and can be liquidated. That applies to the optional Phase 2 [funding loan](/glossary#funding-loan) at Aave and to Phase 3 loans against approved collateral. Lenders bear the other side: a borrower who is not liquidated in time leaves bad debt.
+Any borrow in Definomi creates a debt that grows with variable interest, is valued by an oracle and can be liquidated. That applies to the optional Phase 2 [funding loan](/glossary#funding-loan) at Aave and to Phase 3 loans against approved collateral. Lenders bear the other side: a borrower who is not liquidated in time leaves bad debt.
 
 Borrowing can also involve fees, loan-to-value limits, collateral caps and changes to your health factor that you did not cause.
 
@@ -17,7 +17,7 @@ Borrowing can also involve fees, loan-to-value limits, collateral caps and chang
 | Debt grows | Variable interest accrues continuously on the [variable debt token](/glossary#variable-debt-token), at a rate that rises with the WETH reserve's utilisation |
 | Health factor falls | Collateral value falls, debt rises, or governance changes thresholds |
 | Liquidation | Below a health factor of 1, up to 50% of the debt per call (100% at a health factor of 0.95 or below, or for small positions); the liquidator receives collateral at a discount |
-| Cost exceeds return | Lending losses and funding costs can outweigh returns; Definica's 25% share is taken on gross interest first |
+| Cost exceeds return | Lending losses and funding costs can outweigh returns; Definomi's 25% share is taken on gross interest first |
 | Blocked actions | Borrow caps can stop new borrowing; eMode rules restrict what can be borrowed |
 | Separate obligations persist | Repaying Aave does not clear an osETH minting liability, and neither does a liquidation |
 
@@ -38,7 +38,7 @@ As a liquidity participant you carry interest, liquidation, bad-debt, collateral
 
 ## A worked example
 
-With invented numbers, taken from [Economics](/phase-3/economics): your attributable lending interest is 1.00 ETH, so 0.75 ETH is allocated to you after Definica's 25% share.
+With invented numbers, taken from [Economics](/phase-3/economics): your attributable lending interest is 1.00 ETH, so 0.75 ETH is allocated to you after Definomi's 25% share.
 
 ```text
 allocated interest (0.75 × 1.00)    0.75 ETH

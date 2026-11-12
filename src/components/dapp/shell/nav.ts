@@ -48,6 +48,6 @@ export const LINKS = {
   docs: "/docs",
   docsApp: "/docs/app",
   docsRisks: "/docs/risks",
-  telegram: "https://t.me/definica",
-  x: "https://x.com/definicacom",
+  telegram: "https://t.me/definomi",
+  x: "https://x.com/definomicom",
 };

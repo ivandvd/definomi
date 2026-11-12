@@ -165,7 +165,7 @@ export interface World {
 
 export const VAULT_CAPACITY = 12_000;
 export const MIN_DEPOSIT = 0.01;
-export const FEE_BPS = { vault: 500, definica: 500 };
+export const FEE_BPS = { vault: 500, definomi: 500 };
 
 export const MODULE_RULES = {
   durations: [30, 90, 180, 365],
@@ -513,8 +513,8 @@ function seedFullAccount(world: World, now: number): AccountState {
       ticket: "191 006 342",
     },
   );
-  add("exit-request", at(9), 0.25 * price, "ETH", "0.25 shares · through Definica");
-  add("exit-request", at(2), 0.5 * price, "ETH", "0.50 shares · through Definica");
+  add("exit-request", at(9), 0.25 * price, "ETH", "0.25 shares · through Definomi");
+  add("exit-request", at(2), 0.5 * price, "ETH", "0.50 shares · through Definomi");
 
   if (FEATURES.liquidity) seedLiquidity(world, account, now, add);
   if (FEATURES.borrowing) seedBorrowing(account, now, add);
@@ -612,7 +612,7 @@ function seedAtRiskAccount(world: World, now: number): AccountState {
 
 /* ---------- persistence ---------- */
 
-const STORAGE_KEY = "definica.app.preview.v4";
+const STORAGE_KEY = "definomi.app.preview.v4";
 
 export function loadWorld(): World | null {
   if (typeof window === "undefined") return null;

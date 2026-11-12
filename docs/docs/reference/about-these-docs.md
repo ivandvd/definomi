@@ -6,19 +6,19 @@ sidebar_position: 2
 
 # About these docs
 
-These docs describe how Definica works: the contracts behind each phase, what you hold at each step, where each return comes from, what you owe and what can go wrong. They are written for people using Definica and for reviewers and integrators.
+These docs describe how Definomi works: the contracts behind each phase, what you hold at each step, where each return comes from, what you owe and what can go wrong. They are written for people using Definomi and for reviewers and integrators.
 
 ## How they are organised
 
 | Section | What it covers |
 |---|---|
-| [Introduction](/) | What Definica is, how the three phases fit together and where to start. |
+| [Introduction](/) | What Definomi is, how the three phases fit together and where to start. |
 | [Concepts](/concepts) | One building block per page, from Vault shares to the funding loan. |
 | [Phase 1](/phase-1), [Phase 2](/phase-2), [Phase 3](/phase-3) | Each phase from first transaction to exit. |
 | [Using the app](/app) | Each screen of the app and what it shows before every transaction. |
 | [Risks](/risks) | Every risk a position carries, and what you can check yourself. |
 | [Security](/security) | Audits, the control model, release evidence, the source of truth and address verification. |
-| [Roadmap](/roadmap), [FAQ](/faq), [Glossary](/glossary) | How Definica is built, short answers and definitions. |
+| [Roadmap](/roadmap), [FAQ](/faq), [Glossary](/glossary) | How Definomi is built, short answers and definitions. |
 
 ## Conventions
 
@@ -36,4 +36,4 @@ The deployed contract state prevails over the app and these docs. See [Source of
 
 ## Reporting an error
 
-If something in these docs does not match what you see in the app or onchain, write to contact@definica.com. Send security matters to security@definica.com.
+If something in these docs does not match what you see in the app or onchain, write to contact@definomi.com. Send security matters to security@definomi.com.

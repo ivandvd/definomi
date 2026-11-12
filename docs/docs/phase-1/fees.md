@@ -32,7 +32,7 @@ If a harvest reports a net gain `G` and the fee rate is `f` (that is, `feePercen
 
 ## What you see before you confirm
 
-The Stake screen shows the total fee as a percentage of rewards, taken from rewards and never from your deposit. The transaction review lists the Vault fee and any Definica fee as separate lines, each as a percentage of rewards, alongside the share price, the minimum deposit and the remaining capacity.
+The Stake screen shows the total fee as a percentage of rewards, taken from rewards and never from your deposit. The transaction review lists the Vault fee and any Definomi fee as separate lines, each as a percentage of rewards, alongside the share price, the minimum deposit and the remaining capacity.
 
 ## Gas and other charges
 

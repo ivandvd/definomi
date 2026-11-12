@@ -1,12 +1,12 @@
 ---
 title: 'Stake'
-description: 'The Stake screen: choosing an amount, the checks on it, what the review shows before you confirm, and how your ETH becomes Vault shares in DefinicaCore.'
+description: 'The Stake screen: choosing an amount, the checks on it, what the review shows before you confirm, and how your ETH becomes Vault shares in DefinomiCore.'
 sidebar_position: 3
 ---
 
 # Stake
 
-The Stake screen, headed **Stake ETH**, turns ETH into a staking position. You enter an amount, check the review and sign one transaction; DefinicaCore forwards the ETH to the dedicated StakeWise Vault and records the Vault shares it receives as your position.
+The Stake screen, headed **Stake ETH**, turns ETH into a staking position. You enter an amount, check the review and sign one transaction; DefinomiCore forwards the ETH to the dedicated StakeWise Vault and records the Vault shares it receives as your position.
 
 On a phone the form comes first, with the Stake, Unstake and Locks switch above it. On a wide screen it sits on the right, beside your stake, the Vault card and **How it works**.
 
@@ -14,7 +14,7 @@ On a phone the form comes first, with the Stake, Unstake and Locks switch above 
 
 The screen's **How it works** card sums up the path in three steps:
 
-1. **Your ETH goes in.** Definica sends it to the dedicated Vault and records your position. Behind this, DefinicaCore deposits the ETH with Core as the receiver and you as the [referrer](/glossary#referrer).
+1. **Your ETH goes in.** Definomi sends it to the dedicated Vault and records your position. Behind this, DefinomiCore deposits the ETH with Core as the receiver and you as the [referrer](/glossary#referrer).
 2. **You hold Vault shares.** Your [Vault shares](/glossary#vault-shares) are your proportion of the Vault's assets, so they stay worth your share of it. Core holds the aggregate shares and keeps your part in its ledger.
 3. **Rewards arrive.** Validators run by the selected operator earn rewards, which reach every share at each [harvest](/glossary#harvest), net of fees.
 
@@ -36,7 +36,7 @@ Vault shares are accounting units, not a fixed balance: the number of shares sta
 Beside the form:
 
 - **Your stake**, once you have a position: its value, your Vault shares, the shares available and your lifetime rewards, with a link to this page.
-- The Vault card: the capacity used, the share price and its change over 30 days, the fees as a share of rewards, split between the Vault and Definica, the minimum deposit and the next harvest. The card reads **Active**, or **Activating** until the Vault accepts deposits.
+- The Vault card: the capacity used, the share price and its change over 30 days, the fees as a share of rewards, split between the Vault and Definomi, the minimum deposit and the next harvest. The card reads **Active**, or **Activating** until the Vault accepts deposits.
 - **How it works**, as above.
 - **Unstaking**: unstaking uses the Vault's available liquidity, or waits for validator exits, before the ETH can be claimed, and locked shares can be unstaked once their lock matures.
 
@@ -68,7 +68,7 @@ Once the amount is valid, the button opens the review in the form's place. It sh
 | Vault | The Vault your ETH goes to |
 | Share price | The ETH value of one Vault share now |
 | Vault fee | The Vault's [fee](/glossary#vault-fee), as a percentage of rewards |
-| Definica fee | Definica's fee, as a percentage of rewards |
+| Definomi fee | Definomi's fee, as a percentage of rewards |
 | Minimum deposit | The smallest deposit accepted |
 | Capacity left | The ETH the Vault can still accept before it reaches its [capacity](/glossary#capacity) |
 | Network fee | The estimated cost of the transaction, in ETH on Ethereum |
@@ -80,7 +80,7 @@ A note under the rows repeats that rewards depend on validator performance and a
 Staking follows the app's [transaction steps](/app#how-every-transaction-works).
 
 1. **Review.** As above.
-2. **Confirm in your wallet.** The pane asks you to check the amount and the network in your wallet, then confirm. Your wallet shows a transaction to DefinicaCore carrying your ETH; [Verify addresses](/security/verify-addresses) sets out how to check a Definica address.
+2. **Confirm in your wallet.** The pane asks you to check the amount and the network in your wallet, then confirm. Your wallet shows a transaction to DefinomiCore carrying your ETH; [Verify addresses](/security/verify-addresses) sets out how to check a Definomi address.
 3. **Transaction submitted.** The app shows the deposit as submitted while the network confirms it, and **View transaction** opens its receipt. You can leave with **Close and keep going**; the bell lists the transaction while it is in progress.
 4. **Updating your position.** The transaction is confirmed and the app reads your new position from the chain.
 5. **Staked.** Your Vault shares are in your position, and rewards apply at each harvest. **Your first rewards** counts down to the next harvest, when they arrive. The pane repeats the summary and offers **View transaction**. **Stake more** clears the form for another deposit, and **See your position** opens Home.

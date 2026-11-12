@@ -1,6 +1,6 @@
 import { OG_CONTENT_TYPE, OG_SIZE, shareImage } from "@/lib/og";
 
-export const alt = "Definica's Main Liquidity Module — Commit osETH, see every line.";
+export const alt = "Definomi's Main Liquidity Module — Commit osETH, see every line.";
 export const size = OG_SIZE;
 export const contentType = OG_CONTENT_TYPE;
 

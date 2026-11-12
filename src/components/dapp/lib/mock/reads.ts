@@ -50,7 +50,7 @@ export const TERMS_VERSION = "2026-10";
 const contract = (name: string, role: string): ContractInfo => ({ name, role, address: null });
 
 const CORE_CONTRACTS: ContractInfo[] = [
-  contract("DefinicaCore", "User ledger; holds the aggregate Vault shares"),
+  contract("DefinomiCore", "User ledger; holds the aggregate Vault shares"),
   contract("Staking Vault", "StakeWise Vault that pools ETH and funds validators"),
   contract("Keeper", "StakeWise contract for harvests and reward updates"),
 ];
@@ -91,7 +91,7 @@ export function readPhases(world: World): PhaseInfo[] {
       name: "Pooled ETH staking",
       short: "Staking",
       status: phases[1],
-      summary: "Stake ETH through DefinicaCore into a dedicated StakeWise Vault and hold a proportional share, with optional share locks.",
+      summary: "Stake ETH through DefinomiCore into a dedicated StakeWise Vault and hold a proportional share, with optional share locks.",
       requirements: ["ETH on Ethereum, at least the minimum deposit", "A wallet you control"],
       contracts: CORE_CONTRACTS,
       docsPath: "/phase-1",
@@ -134,7 +134,7 @@ export function readVault(world: World, now: number): VaultInfo {
   const capacityLeft = sim.vault === "full" ? 0 : sim.vault === "nearlyFull" ? 1.2 : Math.max(0, VAULT_CAPACITY - assets);
   const monthAgo = priceAt(vault.prices, now - 30 * DAY);
   return {
-    name: "Definica Vault",
+    name: "Definomi Vault",
     network: "Ethereum",
     operator: "Selected operator",
     capacityEth: VAULT_CAPACITY,
@@ -334,7 +334,7 @@ export function readPosition(world: World, account: AccountState, now: number): 
       now,
     ).map((point) => ({ ...point, earnedEth: point.valueEth - netInflow(account, point.t) })),
     returns: [
-      { id: "staking", label: "Staking rewards", phase: 1, amount: staking, asset: "ETH", note: "Validator performance, net of the Vault and Definica fees" },
+      { id: "staking", label: "Staking rewards", phase: 1, amount: staking, asset: "ETH", note: "Validator performance, net of the Vault and Definomi fees" },
       { id: "treasury", label: "Treasury contributions", phase: 1, amount: treasury, asset: "ETH", note: "Discretionary contributions to the Vault, shared by every share" },
       { id: "penalties", label: "Penalties", phase: 1, amount: penalties, asset: "ETH", note: "Validator penalties, borne by every share" },
     ],

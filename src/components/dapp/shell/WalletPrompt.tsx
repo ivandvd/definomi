@@ -82,7 +82,7 @@ export function WalletPrompt() {
 
         <div className="mt-4 flex items-center justify-center gap-1.5 rounded-full bg-canvas py-1.5 text-xs text-ink-2">
           <Lock className="size-3" aria-hidden="true" />
-          definica.com
+          definomi.com
         </div>
 
         <div className="mt-4 text-center">
@@ -115,7 +115,7 @@ export function WalletPrompt() {
           )}
           <div className="flex items-center justify-between gap-3 border-b border-line-soft py-3">
             <span className="text-ink-2">Interacting with</span>
-            <span className="font-semibold">Definica</span>
+            <span className="font-semibold">Definomi</span>
           </div>
           <div className="flex items-center justify-between gap-3 py-3">
             <span className="text-ink-2">Network fee</span>

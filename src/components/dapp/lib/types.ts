@@ -1,5 +1,5 @@
 /*
- * Domain model of the Definica app. Everything the screens render comes through these types, so
+ * Domain model of the Definomi app. Everything the screens render comes through these types, so
  * the preview client (mock/) and an onchain client are interchangeable. Amounts are plain numbers
  * in whole units (ETH, osETH, shares…); an onchain client converts from and to wei at its edge.
  */
@@ -22,7 +22,7 @@ export interface AssetAmount {
 export interface ContractInfo {
   name: string;
   role: string;
-  /** `null` until Definica publishes the verified address. */
+  /** `null` until Definomi publishes the verified address. */
   address: Address | null;
 }
 
@@ -89,7 +89,7 @@ export interface VaultInfo {
   /** Change of the share price over the last 30 days, in percent. */
   sharePriceChange30dPct: number;
   /** Fees taken from rewards, in basis points. */
-  feeBps: { vault: number; definica: number };
+  feeBps: { vault: number; definomi: number };
   minDepositEth: number;
   /** `Keeper.isCollateralized(vault)`: deposits open once the Vault has registered validators. */
   activated: boolean;

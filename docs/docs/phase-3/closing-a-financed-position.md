@@ -38,7 +38,7 @@ To exit, a position is first unlocked and withdrawn from Aave into osETH. Conver
 ## What to expect
 
 - Several transactions, in sequence, each paying gas.
-- Waits at Aave (liquidity), at the minting Vault (exit queue) and on Ethereum (validator exits), none of which Definica controls.
+- Waits at Aave (liquidity), at the minting Vault (exit queue) and on Ethereum (validator exits), none of which Definomi controls.
 - Possible shortfalls: the funding cost can exceed the lending allocation (see [Economics](/phase-3/economics)), and the osETH burn requires fees on top of principal.
 - If a liquidation occurred along the way, any liquidation fee is separate from debt repayment and liquidator compensation.
 

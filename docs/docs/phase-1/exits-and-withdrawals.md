@@ -18,7 +18,7 @@ The sequence below follows an exit managed through Core. On the direct route you
 sequenceDiagram
   autonumber
   actor U as You
-  participant C as DefinicaCore
+  participant C as DefinomiCore
   participant V as Vault
   participant N as Validators
   U->>C: Request exit
@@ -69,7 +69,7 @@ The Vault's claim delay (`_exitingAssetsClaimDelay`) is an immutable value fixed
 | Partial claims | The remainder stays in your exit position for later settlement | A new ticket is issued to you for the remainder |
 | Where you follow it | The Unstake screen in the app | The Unstake screen, or the Vault directly |
 
-You choose the route on the Unstake screen, where it reads **Through Definica** or **Directly at the Vault**, and the transaction review shows it again before you confirm.
+You choose the route on the Unstake screen, where it reads **Through Definomi** or **Directly at the Vault**, and the transaction review shows it again before you confirm.
 
 ## Exit position states
 

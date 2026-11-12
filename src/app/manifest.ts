@@ -1,12 +1,12 @@
 import type { MetadataRoute } from "next";
 
-const ICONS = "/sites/definica/shared/seo";
+const ICONS = "/sites/definomi/shared/seo";
 
-/** Web app manifest: the name and icons used when Definica is saved to a home screen. */
+/** Web app manifest: the name and icons used when Definomi is saved to a home screen. */
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Definica",
-    short_name: "Definica",
+    name: "Definomi",
+    short_name: "Definomi",
     description: "Pooled ETH staking, committed liquidity and borrowing, in three phases.",
     start_url: "/",
     display: "browser",

@@ -1,6 +1,6 @@
 import { OG_CONTENT_TYPE, OG_SIZE, shareImage } from "@/lib/og";
 
-export const alt = "Definica's borrowing markets — Borrow with the rules up front.";
+export const alt = "Definomi's borrowing markets — Borrow with the rules up front.";
 export const size = OG_SIZE;
 export const contentType = OG_CONTENT_TYPE;
 

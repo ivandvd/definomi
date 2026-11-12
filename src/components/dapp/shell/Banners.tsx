@@ -61,7 +61,7 @@ export function Banners() {
           </Button>
         }
       >
-        <strong>Your wallet is on {chainName(wallet.chainId)}.</strong> Definica runs on Ethereum. Your figures stay visible; switch to make changes.
+        <strong>Your wallet is on {chainName(wallet.chainId)}.</strong> Definomi runs on Ethereum. Your figures stay visible; switch to make changes.
       </Banner>,
     );
   }

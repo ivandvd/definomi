@@ -37,7 +37,7 @@ export default function NotFoundContent({className}: Props): ReactNode {
           Phase 1
         </Link>
         <Link className="df-404__button" href={String(siteConfig.customFields?.siteUrl ?? '/')}>
-          Definica website
+          Definomi website
         </Link>
       </div>
     </main>

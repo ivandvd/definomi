@@ -43,7 +43,7 @@ The Main Liquidity Module applies the rules below to every position, and each ru
 | Rule | What it determines |
 |---|---|
 | Separate reporting | osETH staking exposure, Aave supply interest, allocated debt and its funding cost, Phase 3 interest allocation and incentives, each on its own line |
-| Interest allocation | Of the lending interest attributable to you, 75% is allocated to you and 25% to Definica, before financing costs |
+| Interest allocation | Of the lending interest attributable to you, 75% is allocated to you and 25% to Definomi, before financing costs |
 | Other applicable costs | The costs, beyond funding costs, deducted in the net-result formula |
 
 ## What always holds

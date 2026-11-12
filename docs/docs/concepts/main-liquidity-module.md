@@ -6,7 +6,7 @@ sidebar_position: 9
 
 # Main Liquidity Module
 
-The [Main Liquidity Module](/glossary#main-liquidity-module) is Definica's Phase 2 layer for locking Aave-supplied osETH, held as aEthosETH. It records each committed aEthosETH position, its commitment period, any allocated debt and income. With your authorisation, and where the market supports it, it also manages borrowing against those positions through Aave.
+The [Main Liquidity Module](/glossary#main-liquidity-module) is Definomi's Phase 2 layer for locking Aave-supplied osETH, held as aEthosETH. It records each committed aEthosETH position, its commitment period, any allocated debt and income. With your authorisation, and where the market supports it, it also manages borrowing against those positions through Aave.
 
 ## What the Module records
 
@@ -44,7 +44,7 @@ flowchart TB
 
 - **Entry A** starts from osETH you already hold. A compatible aEthosETH receipt has its osETH supplied already, so it enters the Module directly.
 - **Entry B** starts from ETH staked in a separate StakeWise factory Vault that mints osETH. Minting opens an [osToken position](/glossary#ostoken-position), with its own LTV and liquidation threshold and StakeWise's 5% fee on osToken rewards.
-- Definica's Phase 1 Vault does not mint osETH and is not part of either entry.
+- Definomi's Phase 1 Vault does not mint osETH and is not part of either entry.
 
 :::warning[Debts persist]
 Entry B leaves an osETH liability at the minting Vault, and a funding loan is a further debt at Aave. Neither holding the receipt nor locking it extinguishes either debt.
@@ -64,7 +64,7 @@ The Module accounts for each component on its own line:
 - Aave's variable supply interest, reflected by aEthosETH.
 - Allocated debt and its cost.
 - Attributable lending income from Phase 3.
-- Any Definica incentives.
+- Any Definomi incentives.
 
 Where a [lock-incentive](/glossary#lock-incentives) programme runs for eligible commitments, it is funded separately and has its own budget, duration, eligibility and allocation rules, shown in the app. Incentives are reported alongside staking and supply income, without double counting.
 

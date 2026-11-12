@@ -6,7 +6,7 @@ sidebar_position: 7
 
 # Controls and upgrades
 
-Phase 1 runs on two upgradeable contracts with separate controls. [DefinicaCore](/glossary#definica-core) and [EthPooledStakingVault](/glossary#eth-pooled-staking-vault) are separate ERC-1967 proxies that keep their state across upgrades: Core has a distinct admin and upgrade authoriser, and the Vault has its own admin, who can upgrade only to implementations the StakeWise DAO has registered.
+Phase 1 runs on two upgradeable contracts with separate controls. [DefinomiCore](/glossary#definomi-core) and [EthPooledStakingVault](/glossary#eth-pooled-staking-vault) are separate ERC-1967 proxies that keep their state across upgrades: Core has a distinct admin and upgrade authoriser, and the Vault has its own admin, who can upgrade only to implementations the StakeWise DAO has registered.
 
 Non-custodial does not mean that no administrative or operational permissions exist. This page sets out each one and where you can check it.
 
@@ -15,7 +15,7 @@ Non-custodial does not mean that no administrative or operational permissions ex
 | Area | Control |
 |---|---|
 | Core upgrades | Distinct admin and upgrade authoriser; one pre-authorised implementation at a time |
-| Treasury | Definica's multisig executes every contribution |
+| Treasury | Definomi's multisig executes every contribution |
 | Deposits | Keeper collateralisation and Core's activation check |
 | Vault | Its own administration and a StakeWise-approved implementation path |
 
@@ -48,7 +48,7 @@ The EthFoxVault lineage also lets the Vault admin assign the [validators manager
 
 ## Incident response
 
-In an incident, Definica can pause the app's interface, recommend that users stop interacting, migrate contracts, disable a module, restrict deposits or take another technically available action. Definica does not guarantee that any of these actions will be available, timely, effective or approved when needed.
+In an incident, Definomi can pause the app's interface, recommend that users stop interacting, migrate contracts, disable a module, restrict deposits or take another technically available action. Definomi does not guarantee that any of these actions will be available, timely, effective or approved when needed.
 
 ## What you can verify
 

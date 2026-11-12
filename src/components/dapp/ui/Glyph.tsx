@@ -1,6 +1,6 @@
 import { Check, LoaderCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { DefinicaMark } from "./brand";
+import { DefinomiMark } from "./brand";
 import type { ActivityStatus, Asset } from "../lib/types";
 
 /* The landing page's wheel glyphs in coloured, ink-outlined circles: the walkthrough's badges. */
@@ -9,7 +9,7 @@ export type GlyphName =
   | "aave-v3"
   | "aethoseth"
   | "borrowing-markets"
-  | "definica-core"
+  | "definomi-core"
   | "ethereum"
   | "exit-queue"
   | "keeper"
@@ -21,14 +21,14 @@ export type GlyphName =
   | "validators"
   | "vault-shares";
 
-export const glyphSrc = (glyph: GlyphName) => `/sites/definica/root-8a5edab2/glyphs/${glyph}.svg`;
+export const glyphSrc = (glyph: GlyphName) => `/sites/definomi/root-8a5edab2/glyphs/${glyph}.svg`;
 
 /** Each glyph's tone, as on the landing page. */
 export const GLYPH_TONES: Record<GlyphName, string> = {
   "aave-v3": "#9dc4f5",
   aethoseth: "#9dc4f5",
   "borrowing-markets": "#9ca69e",
-  "definica-core": "#d1f500",
+  "definomi-core": "#d1f500",
   ethereum: "#9dc4f5",
   "exit-queue": "#ffcadc",
   keeper: "#e2f2e5",
@@ -63,7 +63,7 @@ export function GlyphBadge({ glyph, size = 32, tone, className }: { glyph: Glyph
  * - aEthosETH: no file. Drawn as Aave's interface draws aTokens: the underlying icon inside a
  *   #b6509e → #2ebac6 ring, 5.36% of the diameter thick.
  */
-const TOKENS = "/sites/definica/app/tokens";
+const TOKENS = "/sites/definomi/app/tokens";
 
 /** The osETH diamond within a round box (the official art has no disc). */
 function OsEthArt({ inset = false }: { inset?: boolean }) {
@@ -79,13 +79,13 @@ function OsEthArt({ inset = false }: { inset?: boolean }) {
   );
 }
 
-/** The right icon for each asset: the real token icons, and the Definica mark for Vault shares. */
+/** The right icon for each asset: the real token icons, and the Definomi mark for Vault shares. */
 export function TokenIcon({ asset, size = 32, className }: { asset: Asset; size?: number; className?: string }) {
   const box = { width: size, height: size };
   if (asset === "shares") {
     return (
       <span className={cn("inline-flex shrink-0 items-center justify-center rounded-full bg-ink", className)} style={box} aria-hidden="true">
-        <DefinicaMark className="h-[52%] w-[52%]" color="#d1f500" accent={null} />
+        <DefinomiMark className="h-[52%] w-[52%]" color="#d1f500" accent={null} />
       </span>
     );
   }

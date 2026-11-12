@@ -58,7 +58,7 @@ Supplying does not make aEthosETH collateral for a borrow: supplying liquidity a
 
 ## What the Module reports
 
-The Module accounts separately for StakeWise staking exposure through osETH, variable Aave supply interest reflected by aEthosETH, and any separately funded Definica incentives. Your position shows each on its own line. If you authorise financing, allocated debt and its funding cost appear as further lines.
+The Module accounts separately for StakeWise staking exposure through osETH, variable Aave supply interest reflected by aEthosETH, and any separately funded Definomi incentives. Your position shows each on its own line. If you authorise financing, allocated debt and its funding cost appear as further lines.
 
 ## What you can verify
 

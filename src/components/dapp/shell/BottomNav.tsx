@@ -28,7 +28,7 @@ function Tab({ href, label, icon, current }: { href: string; label: string; icon
 const STAKING = ["/app/stake", "/app/unstake", "/app/locks"];
 
 /**
- * The walkthrough's tab bar: Home, Stake, the Definica hexagon, Activity, Settings. The hexagon
+ * The walkthrough's tab bar: Home, Stake, the Definomi hexagon, Activity, Settings. The hexagon
  * opens every section, with whatever is ready to collect on top and what opens next below.
  */
 export function BottomNav() {

@@ -21,7 +21,7 @@ A slashed validator loses an initial amount at once (0.0078125 ETH for a 32 ETH 
 
 ## How losses pass through
 
-In StakeWise's design, rewards and penalties are contained within each Vault: Definica's Vault is not affected by other Vaults' validators, and other Vaults are not affected by its validators. Inside the Vault, losses are pooled. The [Keeper](/glossary#keeper) reports a negative reward at the next [harvest](/glossary#harvest), total assets fall, and every share, locked or not, is worth less.
+In StakeWise's design, rewards and penalties are contained within each Vault: Definomi's Vault is not affected by other Vaults' validators, and other Vaults are not affected by its validators. Inside the Vault, losses are pooled. The [Keeper](/glossary#keeper) reports a negative reward at the next [harvest](/glossary#harvest), total assets fall, and every share, locked or not, is worth less.
 
 Pooled staking also concentrates stake with the [operator](/glossary#operator) who runs the nodes. A dishonest or incompetent operator can censor transactions, extract value or become a single point of failure. The app shows the operator alongside the Vault's details, and the Vault's `validatorsManager()` returns the address that runs its validator operations.
 
@@ -31,9 +31,9 @@ Ethereum rate-limits validator exits. The [validator exit queue](/glossary#valid
 
 A withdrawal that the Vault cannot serve from its [unbonded ETH](/glossary#unbonded-eth) waits on all of this. Depending on how many validators are exiting at the time, it can take hours or weeks. Any wait time the app shows is an estimate.
 
-## What Definica controls, and what it does not
+## What Definomi controls, and what it does not
 
-| Definica and its operator control | Outside Definica's control |
+| Definomi and its operator control | Outside Definomi's control |
 |---|---|
 | Choice and oversight of the operator | Ethereum's reward rate, penalties and churn limit |
 | The Vault fee and MEV configuration | The length of the validator exit queue |

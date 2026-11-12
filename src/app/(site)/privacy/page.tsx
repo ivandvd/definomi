@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { LegalPage } from "@/components/sites/definica/legal/LegalPage";
-import { AppFooter } from "@/components/sites/definica/shared/AppFooter";
-import { AppHeader } from "@/components/sites/definica/shared/AppHeader";
-import { AppShell } from "@/components/sites/definica/shared/AppShell";
-import { privacy } from "@/data/sites/definica/legal/privacy";
+import { LegalPage } from "@/components/sites/definomi/legal/LegalPage";
+import { AppFooter } from "@/components/sites/definomi/shared/AppFooter";
+import { AppHeader } from "@/components/sites/definomi/shared/AppHeader";
+import { AppShell } from "@/components/sites/definomi/shared/AppShell";
+import { privacy } from "@/data/sites/definomi/legal/privacy";
 
 export const metadata: Metadata = {
   title: privacy.title,
   description: privacy.description,
   alternates: { canonical: "/privacy" },
-  openGraph: { title: `${privacy.title} — Definica`, description: privacy.description, url: "/privacy" },
+  openGraph: { title: `${privacy.title} — Definomi`, description: privacy.description, url: "/privacy" },
 };
 
 export default function Privacy() {

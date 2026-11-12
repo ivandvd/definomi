@@ -6,7 +6,7 @@ sidebar_position: 8
 
 # Share locks
 
-A [share lock](/glossary#share-lock) is an optional DefinicaCore feature of Phase 1: you commit chosen Vault shares not to exit for 7 to 365 days. Locked shares stay in reward accounting, and you can hold up to 10 open lock positions.
+A [share lock](/glossary#share-lock) is an optional DefinomiCore feature of Phase 1: you commit chosen Vault shares not to exit for 7 to 365 days. Locked shares stay in reward accounting, and you can hold up to 10 open lock positions.
 
 ## How it works
 

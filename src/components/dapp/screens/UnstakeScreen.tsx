@@ -36,7 +36,7 @@ const STATUS: Record<ExitRequest["status"], { label: string; tone: PillTone }> =
 };
 
 const ROUTES: { value: ExitRoute; title: string; text: string }[] = [
-  { value: "core", title: "Through Definica", text: "Definica holds the exit for you. A partial claim pays what is ready and keeps the rest for later." },
+  { value: "core", title: "Through Definomi", text: "Definomi holds the exit for you. A partial claim pays what is ready and keeps the rest for later." },
   { value: "vault", title: "Directly at the Vault", text: "The exit goes to your own address at the Vault, and you claim it there." },
 ];
 
@@ -221,7 +221,7 @@ function ExitRow({ exit, onClaim }: { exit: ExitRequest; onClaim: () => void }) 
             </Pill>
           </div>
           <div className="mt-0.5 text-xs text-ink-2">
-            ≈ <Amount value={exit.ethEstimate} asset="ETH" /> · requested {formatDate(exit.requestedAt)} · {exit.route === "core" ? "through Definica" : "at the Vault"}
+            ≈ <Amount value={exit.ethEstimate} asset="ETH" /> · requested {formatDate(exit.requestedAt)} · {exit.route === "core" ? "through Definomi" : "at the Vault"}
           </div>
         </div>
         {exit.status === "claimable" || exit.status === "partial" ? (
@@ -338,7 +338,7 @@ function HowExitsSettle() {
         />
       </div>
       <p className="mt-3 text-[13px] leading-5 text-ink-2">
-        A request becomes claimable once the Vault has processed it and its claim delay has passed. When validators must exit, the timing depends on Ethereum&apos;s validator exit queue, which Definica doesn&apos;t control.
+        A request becomes claimable once the Vault has processed it and its claim delay has passed. When validators must exit, the timing depends on Ethereum&apos;s validator exit queue, which Definomi doesn&apos;t control.
       </p>
     </Card>
   );

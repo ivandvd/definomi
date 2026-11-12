@@ -1,12 +1,12 @@
 ---
 title: 'osETH'
-description: 'osETH is StakeWise''s repricing liquid staking token and the asset you supply to Aave V3 Ethereum to enter Definica''s Phase 2.'
+description: 'osETH is StakeWise''s repricing liquid staking token and the asset you supply to Aave V3 Ethereum to enter Definomi''s Phase 2.'
 sidebar_position: 2
 ---
 
 # osETH
 
-[osETH](/glossary#oseth) is StakeWise's liquid staking token, short for Overcollateralized Staked Token: a repricing ERC-20 whose value rises as staking rewards accrue. It is the entry asset of Definica's Phase 2, where it is supplied to Aave V3 Ethereum. Definica's Phase 1 Vault does not mint it.
+[osETH](/glossary#oseth) is StakeWise's liquid staking token, short for Overcollateralized Staked Token: a repricing ERC-20 whose value rises as staking rewards accrue. It is the entry asset of Definomi's Phase 2, where it is supplied to Aave V3 Ethereum. Definomi's Phase 1 Vault does not mint it.
 
 ## What osETH is
 
@@ -34,7 +34,7 @@ osETH can be redeemed for ETH at its fair exchange rate through StakeWise's [red
 
 If Vaults lack liquidity, the Oracle network forces validator exits until the queue can be filled. osETH can also be sold on secondary markets, a separate route with its own price risk.
 
-## Where osETH appears in Definica
+## Where osETH appears in Definomi
 
 | Phase | Role of osETH |
 |---|---|
@@ -43,11 +43,11 @@ If Vaults lack liquidity, the Oracle network forces validator exits until the qu
 | Phase 2, Entry B | Minted against ETH you stake in a separate StakeWise factory Vault that supports osETH minting. |
 | Phase 3 | The primary collateral asset of the borrowing markets. |
 
-Definica reports any osETH exposure as its own component, separate from Aave supply interest and any Definica incentives. See [Entry A and Entry B](/glossary#entry-a-and-entry-b).
+Definomi reports any osETH exposure as its own component, separate from Aave supply interest and any Definomi incentives. See [Entry A and Entry B](/glossary#entry-a-and-entry-b).
 
 ## What you can verify
 
-- The osETH token contract, published by StakeWise at [docs.stakewise.io/contracts/networks/Mainnet](https://docs.stakewise.io/contracts/networks/Mainnet). It is StakeWise's contract, not Definica's; see [Verify addresses](/security/verify-addresses).
+- The osETH token contract, published by StakeWise at [docs.stakewise.io/contracts/networks/Mainnet](https://docs.stakewise.io/contracts/networks/Mainnet). It is StakeWise's contract, not Definomi's; see [Verify addresses](/security/verify-addresses).
 - The current exchange rate and `avgRewardPerSecond` on `OsTokenVaultController`.
 - For an osToken position: its LTV, and whether it is above the Vault's liquidation threshold.
 

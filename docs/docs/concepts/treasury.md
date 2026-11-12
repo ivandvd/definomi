@@ -1,16 +1,16 @@
 ---
 title: 'Treasury'
-description: 'Definica''s multisig can raise the value of remaining Vault shares by donating ETH or burning its own shares, at its discretion.'
+description: 'Definomi''s multisig can raise the value of remaining Vault shares by donating ETH or burning its own shares, at its discretion.'
 sidebar_position: 11
 ---
 
 # Treasury
 
-Definica's treasury is a [multisig](/glossary#multisig) that can make discretionary contributions to the dedicated Vault in two ways. An [ETH donation](/glossary#eth-donation) adds ETH without minting shares; a [treasury share burn](/glossary#treasury-share-burn) destroys Vault shares the multisig owns. Either way every remaining share is backed by more ETH, and neither is a guaranteed return.
+Definomi's treasury is a [multisig](/glossary#multisig) that can make discretionary contributions to the dedicated Vault in two ways. An [ETH donation](/glossary#eth-donation) adds ETH without minting shares; a [treasury share burn](/glossary#treasury-share-burn) destroys Vault shares the multisig owns. Either way every remaining share is backed by more ETH, and neither is a guaranteed return.
 
 ## Where the funds come from
 
-Protocol-owned revenue and an allocated treasury budget fund the contributions, which Definica's multisig executes. A share burn uses only the multisig's own deposits or fee allocations, never Core's user balances.
+Protocol-owned revenue and an allocated treasury budget fund the contributions, which Definomi's multisig executes. A share burn uses only the multisig's own deposits or fee allocations, never Core's user balances.
 
 ## How it works
 
@@ -18,8 +18,8 @@ Both routes end in the same place: more ETH behind each remaining share.
 
 ```mermaid
 flowchart TB
-  M(["Definica multisig"])
-  C["DefinicaCore<br/>donator role"]
+  M(["Definomi multisig"])
+  C["DefinomiCore<br/>donator role"]
   A["Vault assets rise<br/>at the next harvest"]
   S["Vault share supply<br/>falls at once"]
   P["Each remaining share<br/>is worth more ETH"]
@@ -64,5 +64,5 @@ Worked examples of both formulas, with illustrative numbers, are in [Treasury po
 ## Related
 
 - [Vault shares](/concepts/vault-shares)
-- [DefinicaCore](/concepts/definica-core)
+- [DefinomiCore](/concepts/definomi-core)
 - [Keeper and harvests](/concepts/keeper-and-harvests)

@@ -1,12 +1,12 @@
 ---
 title: 'Depositing'
-description: 'How your ETH becomes a Definica position: the checks Core and the Vault apply, the shares you receive and what you see before confirming.'
+description: 'How your ETH becomes a Definomi position: the checks Core and the Vault apply, the shares you receive and what you see before confirming.'
 sidebar_position: 2
 ---
 
 # Depositing
 
-A deposit is one transaction from your wallet to [DefinicaCore](/glossary#definica-core). Core forwards the ETH to the dedicated Vault, receives Vault shares and credits them to you or to a designated [beneficiary](/glossary#beneficiary), and the Vault pools the ETH until validator funding requirements are met.
+A deposit is one transaction from your wallet to [DefinomiCore](/glossary#definomi-core). Core forwards the ETH to the dedicated Vault, receives Vault shares and credits them to you or to a designated [beneficiary](/glossary#beneficiary), and the Vault pools the ETH until validator funding requirements are met.
 
 ## Step by step
 
@@ -16,7 +16,7 @@ The sequence below follows one deposit from your wallet to a recorded position.
 sequenceDiagram
   autonumber
   actor U as You
-  participant C as DefinicaCore
+  participant C as DefinomiCore
   participant K as Keeper
   participant V as Vault
   U->>C: Send ETH
@@ -66,7 +66,7 @@ The Stake screen and the transaction review show:
 
 - The Vault's name, network and operator.
 - The remaining capacity.
-- The Vault fee and any Definica fee, each as a percentage of rewards. See [Fees](/phase-1/fees).
+- The Vault fee and any Definomi fee, each as a percentage of rewards. See [Fees](/phase-1/fees).
 - The minimum deposit.
 - The estimated shares and the current share price. Shares are accounting units, not a fixed balance.
 - The conditions: rewards depend on validator performance, fees are taken from rewards, and a withdrawal may use available liquidity or require validator exits.

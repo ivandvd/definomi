@@ -9,7 +9,7 @@ export function Footer() {
   return (
     <footer className="mx-auto hidden w-full max-w-[1240px] px-8 pt-4 pb-8 text-[13px] text-ink-3 lg:block">
       <div className="flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-line pt-5">
-        <span className="font-semibold text-ink-2">Definica</span>
+        <span className="font-semibold text-ink-2">Definomi</span>
         <a className={linkClass} href={LINKS.docs}>
           Docs
         </a>

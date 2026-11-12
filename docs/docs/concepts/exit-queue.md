@@ -6,7 +6,7 @@ sidebar_position: 7
 
 # Exit queue
 
-To leave Phase 1 you move shares into the Vault's [exit queue](/glossary#exit-queue), wait for a harvest to process them and for the claim delay to pass, then claim your ETH in a separate transaction. DefinicaCore can manage the exit for you or route it to your own address at the Vault.
+To leave Phase 1 you move shares into the Vault's [exit queue](/glossary#exit-queue), wait for a harvest to process them and for the claim delay to pass, then claim your ETH in a separate transaction. DefinomiCore can manage the exit for you or route it to your own address at the Vault.
 
 ## Why there is a queue
 
@@ -28,7 +28,7 @@ Most of the Vault's ETH is staked in validators on the Beacon Chain, and Ethereu
 
 ## Timing
 
-Definica does not promise an exit time. When an exit needs validator exits, it depends on Ethereum's [validator exit queue](/glossary#validator-exit-queue): exits are capped per [epoch](/glossary#epoch) by a churn limit, an exited validator becomes withdrawable only 256 epochs later, and the withdrawal sweep pays at most 16 withdrawals per block. Depending on how many validators are leaving, such an exit can take hours or weeks. See [Staking and validator risk](/risks/staking-and-validator).
+Definomi does not promise an exit time. When an exit needs validator exits, it depends on Ethereum's [validator exit queue](/glossary#validator-exit-queue): exits are capped per [epoch](/glossary#epoch) by a churn limit, an exited validator becomes withdrawable only 256 epochs later, and the withdrawal sweep pays at most 16 withdrawals per block. Depending on how many validators are leaving, such an exit can take hours or weeks. See [Staking and validator risk](/risks/staking-and-validator).
 
 ## Managed and direct exits
 
@@ -37,7 +37,7 @@ Definica does not promise an exit time. When an exit needs validator exits, it d
 | Managed through Core | Core | Core claims and settles your position; a [managed partial claim](/glossary#managed-partial-claim) keeps the remainder open. |
 | Direct at the Vault | Your address | You claim at the Vault. |
 
-You choose the route on the Unstake screen in the app, where the two routes read **Through Definica** and **Directly at the Vault**.
+You choose the route on the Unstake screen in the app, where the two routes read **Through Definomi** and **Directly at the Vault**.
 
 ## What it means for you
 

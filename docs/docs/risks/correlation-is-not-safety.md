@@ -1,6 +1,6 @@
 ---
 title: 'Correlation is not safety'
-description: 'Every layer of Definica is ETH-correlated, and that removes none of the price, liquidation, interest or governance risk.'
+description: 'Every layer of Definomi is ETH-correlated, and that removes none of the price, liquidation, interest or governance risk.'
 sidebar_position: 6
 ---
 
@@ -34,9 +34,9 @@ borrow 9.3 ETH-worth  → health factor = 9.5 / 9.3 = 1.02   (the 93% LTV maximu
 
 At the maximum, a fall of about 2% in the collateral's valuation against the debt is enough to reach a health factor of 1. The correlation is what allowed the 93% in the first place; it does not protect the 2%.
 
-## Correlation across Definica
+## Correlation across Definomi
 
-Every layer of Definica is ETH-correlated: Phase 1 shares, osETH, aEthosETH, the funding loan, and the Phase 3 collateral and borrow asset. That keeps the ETH-denominated accounting coherent. It also means that one event, a sharp ETH move with crowded exits, can touch every layer in the same hour. Correlation with ETH does not remove these risks.
+Every layer of Definomi is ETH-correlated: Phase 1 shares, osETH, aEthosETH, the funding loan, and the Phase 3 collateral and borrow asset. That keeps the ETH-denominated accounting coherent. It also means that one event, a sharp ETH move with crowded exits, can touch every layer in the same hour. Correlation with ETH does not remove these risks.
 
 ## What you can verify
 

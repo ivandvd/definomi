@@ -10,30 +10,30 @@ import DocCardList from '@theme/DocCardList';
 
 # Phase 1 — Pooled ETH staking
 
-Phase 1 pools your ETH in a dedicated StakeWise Vault. You keep a proportional share of the pool, recorded by DefinicaCore, and the Vault's validators do the staking, so there is no validator for you to run.
+Phase 1 pools your ETH in a dedicated StakeWise Vault. You keep a proportional share of the pool, recorded by DefinomiCore, and the Vault's validators do the staking, so there is no validator for you to run.
 
 ## How it works
 
-You send ETH to [DefinicaCore](/glossary#definica-core). Core forwards it to [EthPooledStakingVault](/glossary#eth-pooled-staking-vault), a dedicated StakeWise [Vault](/glossary#vault) that pools deposits and funds validators run by the selected [operator](/glossary#operator). Rewards, penalties and exits are reflected in the value of [Vault shares](/glossary#vault-shares). Core holds the aggregate shares and records the proportion that belongs to each user, so it tracks principal, shares, rewards, locks and exits for every position.
+You send ETH to [DefinomiCore](/glossary#definomi-core). Core forwards it to [EthPooledStakingVault](/glossary#eth-pooled-staking-vault), a dedicated StakeWise [Vault](/glossary#vault) that pools deposits and funds validators run by the selected [operator](/glossary#operator). Rewards, penalties and exits are reflected in the value of [Vault shares](/glossary#vault-shares). Core holds the aggregate shares and records the proportion that belongs to each user, so it tracks principal, shares, rewards, locks and exits for every position.
 
 The diagram shows where your ETH goes and which systems act on it.
 
 ```mermaid
 flowchart TB
-  U(["Your wallet"]) -->|"ETH"| C["DefinicaCore<br/>user ledger"]
+  U(["Your wallet"]) -->|"ETH"| C["DefinomiCore<br/>user ledger"]
   C -->|"deposit"| V["EthPooledStakingVault<br/>pooled ETH"]
   V -->|"32 ETH tranches"| VAL["Validators<br/>run by the operator"]
   VAL -->|"rewards and exits"| V
   K["StakeWise Keeper<br/>and Oracles"] -.->|"harvest"| V
   K -.->|"activation check"| C
-  T["Definica multisig"] -.->|"contributions"| V
+  T["Definomi multisig"] -.->|"contributions"| V
 ```
 
 - **Deposits.** Core calls the Vault's `deposit(receiver = Core, referrer = caller)`, so the Vault mints the shares to Core and records you as the [referrer](/glossary#referrer).
 - **Validators.** The Vault funds validators in 32 ETH tranches.
 - **Rewards.** StakeWise's [Keeper](/glossary#keeper) and [Oracles](/glossary#oracles) report rewards and penalties every 12 hours, and the Vault applies them at each [harvest](/glossary#harvest).
 - **Activation check.** Core refuses deposits until `Keeper.isCollateralized(vault)` is true, that is, until the Vault has registered validators. See [Activation check](/glossary#activation-check).
-- **Treasury.** The Definica [multisig](/glossary#multisig) contributes in one of two ways: it sends ETH through Core's `donateAllAssets()`, which forwards it to the Vault's `donateAssets()`, or it burns shares it owns with a direct `donateShares()` call on the Vault.
+- **Treasury.** The Definomi [multisig](/glossary#multisig) contributes in one of two ways: it sends ETH through Core's `donateAllAssets()`, which forwards it to the Vault's `donateAssets()`, or it burns shares it owns with a direct `donateShares()` call on the Vault.
 
 Phase 1 is ETH only. The Vault is based on StakeWise's [EthFoxVault](/glossary#ethfoxvault) and does not mint osETH. Exits go through the Vault's [exit queue](/glossary#exit-queue), and optional [share locks](/glossary#share-lock) let you commit shares for a period you choose.
 
@@ -42,11 +42,11 @@ Phase 1 is ETH only. The Vault is based on StakeWise's [EthFoxVault](/glossary#e
 | Component | What it does | Where it runs |
 |---|---|---|
 | Your wallet | Sends ETH, requests exits and locks, and signs every transaction after you review it | Your own account |
-| [DefinicaCore](/concepts/definica-core) | Routes deposits, holds the aggregate Vault shares, and records each user's position, locks and exits | Definica contract behind an ERC-1967 proxy |
+| [DefinomiCore](/concepts/definomi-core) | Routes deposits, holds the aggregate Vault shares, and records each user's position, locks and exits | Definomi contract behind an ERC-1967 proxy |
 | [EthPooledStakingVault](/concepts/eth-pooled-staking-vault) | Pools ETH, funds validators, runs the exit queue and mints fee shares | Dedicated StakeWise Vault behind its own ERC-1967 proxy |
 | Validators and operator | Stake the pooled ETH; the operator runs the node and validator clients | Ethereum's consensus layer |
 | [Keeper and Oracles](/concepts/keeper-and-harvests) | Report rewards and penalties every 12 hours, approve validator registrations and enforce exits | StakeWise infrastructure on Ethereum |
-| Definica multisig | Executes treasury contributions | Multisig wallet controlled by Definica |
+| Definomi multisig | Executes treasury contributions | Multisig wallet controlled by Definomi |
 
 ## Roles
 
@@ -71,7 +71,7 @@ The holder of each role is readable onchain. [Controls and upgrades](/phase-1/co
 3. **Lock, if you choose.** You can lock shares for 7 to 365 days, with up to 10 lock positions open. Locked shares keep earning. See [Share locks](/phase-1/share-locks).
 4. **Exit.** Your shares enter the exit queue, the Vault serves the request from available liquidity or validator exits, and after the Vault's claim delay you claim the ETH. See [Exits and withdrawals](/phase-1/exits-and-withdrawals).
 
-Alongside these, the Definica multisig can make discretionary contributions ([Treasury policy](/phase-1/treasury-policy)), the Vault fee comes out of rewards ([Fees](/phase-1/fees)), and a defined control model governs both contracts ([Controls and upgrades](/phase-1/controls-and-upgrades)).
+Alongside these, the Definomi multisig can make discretionary contributions ([Treasury policy](/phase-1/treasury-policy)), the Vault fee comes out of rewards ([Fees](/phase-1/fees)), and a defined control model governs both contracts ([Controls and upgrades](/phase-1/controls-and-upgrades)).
 
 ## What Phase 1 is not
 

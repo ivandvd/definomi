@@ -32,7 +32,7 @@ A transaction you send appears at the top of the list once it is submitted, unde
 
 ### Export
 
-**Export CSV**, at the top of the screen, downloads the entries shown under the current filter as `definica-activity.csv`, with each entry's date, type, direction, amount, asset, status, note and transaction. It appears once the account has activity.
+**Export CSV**, at the top of the screen, downloads the entries shown under the current filter as `definomi-activity.csv`, with each entry's date, type, direction, amount, asset, status, note and transaction. It appears once the account has activity.
 
 When the account has no entries yet, the screen reads **No activity yet**; when a filter matches nothing, it reads **Nothing here**.
 
@@ -56,7 +56,7 @@ The **Your layers** card keeps each layer on its own line, never added together,
 ## Reading the numbers
 
 - **Values move at harvests.** Rewards and penalties reach the Vault through StakeWise's [Oracles](/glossary#oracles) every 12 hours and apply at a [harvest](/glossary#harvest). Your value changes then, not continuously, which is why the chart moves in steps.
-- **No projected rate.** The app shows the share price and its past change, not an APY. Treasury contributions from Definica's multisig raise the value of every share, but they are discretionary and never a guaranteed return. See [Treasury policy](/phase-1/treasury-policy).
+- **No projected rate.** The app shows the share price and its past change, not an APY. Treasury contributions from Definomi's multisig raise the value of every share, but they are discretionary and never a guaranteed return. See [Treasury policy](/phase-1/treasury-policy).
 - **Exit amounts are estimates until claimed.** A queued exit shows its ETH at today's share price; the amount paid follows the Vault's accounting.
 
 ## What you can verify

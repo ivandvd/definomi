@@ -1,6 +1,6 @@
 ---
 title: 'Roadmap'
-description: 'How Definica is built: three phases delivered through six milestones, each one creating the conditions for the next.'
+description: 'How Definomi is built: three phases delivered through six milestones, each one creating the conditions for the next.'
 sidebar_position: 9
 ---
 
@@ -8,21 +8,21 @@ import {Cards, Card} from '@site/src/components/Cards';
 
 # Roadmap
 
-Definica is built in three phases, delivered through six milestones. Each phase creates the conditions for the next: staking first, then committed liquidity, then borrowing. Progress is tied to evidence and readiness rather than to a fixed date.
+Definomi is built in three phases, delivered through six milestones. Each phase creates the conditions for the next: staking first, then committed liquidity, then borrowing. Progress is tied to evidence and readiness rather than to a fixed date.
 
 ## The three phases
 
 <Cards>
-  <Card to="/phase-1" kicker="Phase 1 · Anchor" title="Pooled ETH staking" tone="sky" blob="green" more="Read Phase 1">ETH pooled in a dedicated StakeWise Vault, with each user's proportional position recorded by DefinicaCore.</Card>
+  <Card to="/phase-1" kicker="Phase 1 · Anchor" title="Pooled ETH staking" tone="sky" blob="green" more="Read Phase 1">ETH pooled in a dedicated StakeWise Vault, with each user's proportional position recorded by DefinomiCore.</Card>
   <Card to="/phase-2" kicker="Phase 2 · Commit" title="Main Liquidity Module" tone="baby" blob="lemonade" more="Read Phase 2">osETH supplied to Aave V3 Ethereum, held as aEthosETH and committed for a fixed duration.</Card>
   <Card to="/phase-3" kicker="Phase 3 · Grow" title="Borrowing markets" tone="lemonade" blob="sky" more="Read Phase 3">Loans against approved ETH-correlated collateral, supplied by committed liquidity and direct ETH.</Card>
 </Cards>
 
 | Phase | What it establishes |
 |---|---|
-| **Phase 1 · Anchor** | The foundation. Eligible ETH is pooled in a dedicated StakeWise Vault and DefinicaCore records each user's proportional position, so nobody has to run a validator. Vault capacity, fees and participation conditions are shown before you confirm. Optional share locks run from 7 to 365 days, with up to 10 lock positions at a time. |
-| **Phase 2 · Commit** | Committed liquidity. osETH supplied to Aave V3 Ethereum is represented by aEthosETH and committed to the Main Liquidity Module for a fixed duration under the Module's rules. Optional funding loans, authorised by the user, supply Definica's lending markets. |
-| **Phase 3 · Grow** | Borrowing. Markets for approved ETH-correlated collateral, with osETH as the primary collateral asset, where borrowers take supported assets under published collateral, interest and liquidation rules. Of the lending interest attributable to a participant, 75% is allocated to the participant and 25% to Definica. |
+| **Phase 1 · Anchor** | The foundation. Eligible ETH is pooled in a dedicated StakeWise Vault and DefinomiCore records each user's proportional position, so nobody has to run a validator. Vault capacity, fees and participation conditions are shown before you confirm. Optional share locks run from 7 to 365 days, with up to 10 lock positions at a time. |
+| **Phase 2 · Commit** | Committed liquidity. osETH supplied to Aave V3 Ethereum is represented by aEthosETH and committed to the Main Liquidity Module for a fixed duration under the Module's rules. Optional funding loans, authorised by the user, supply Definomi's lending markets. |
+| **Phase 3 · Grow** | Borrowing. Markets for approved ETH-correlated collateral, with osETH as the primary collateral asset, where borrowers take supported assets under published collateral, interest and liquidation rules. Of the lending interest attributable to a participant, 75% is allocated to the participant and 25% to Definomi. |
 
 ## Six milestones
 

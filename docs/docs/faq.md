@@ -1,6 +1,6 @@
 ---
 title: 'FAQ'
-description: 'Short answers to the questions people ask about Definica, grouped by theme, each linking to the page with the detail.'
+description: 'Short answers to the questions people ask about Definomi, grouped by theme, each linking to the page with the detail.'
 sidebar_position: 10
 ---
 
@@ -8,21 +8,21 @@ sidebar_position: 10
 
 Short answers to common questions, grouped by theme. Each answer links to the page with the detail.
 
-## About Definica
+## About Definomi
 
-### What is Definica?
+### What is Definomi?
 
 An Ethereum protocol that connects pooled ETH staking (Phase 1), committed osETH and aEthosETH liquidity through the Main Liquidity Module (Phase 2) and borrowing markets for approved ETH-correlated collateral (Phase 3). Each module runs on its own contracts. See the [Introduction](/).
 
-### Which network does Definica use?
+### Which network does Definomi use?
 
 Ethereum. The Vault uses StakeWise's mainnet infrastructure and the Main Liquidity Module uses Aave V3 Ethereum. The app shows the network on every transaction review. See [Verify addresses](/security/verify-addresses).
 
 ### Why StakeWise?
 
-StakeWise Vaults give Definica what it needs: independent Vault administration, proportional accounting and the adoption of approved upgrades. They are isolated pools with shares-based accounting and permissionless Vault creation. See [EthPooledStakingVault](/concepts/eth-pooled-staking-vault).
+StakeWise Vaults give Definomi what it needs: independent Vault administration, proportional accounting and the adoption of approved upgrades. They are isolated pools with shares-based accounting and permissionless Vault creation. See [EthPooledStakingVault](/concepts/eth-pooled-staking-vault).
 
-### Is Definica non-custodial?
+### Is Definomi non-custodial?
 
 Your ETH sits in a StakeWise Vault governed by smart contracts, not with a company. Non-custodial does not mean that no administrative or operational permissions exist: the contracts are upgradeable through distinct roles, and those roles are described openly. See [Controls and upgrades](/phase-1/controls-and-upgrades).
 
@@ -34,7 +34,7 @@ No. Deposits are pooled in a dedicated StakeWise Vault and the Vault's operator 
 
 ### What do I actually hold?
 
-A proportional position recorded by DefinicaCore, backed by Vault shares that Core holds in aggregate. Shares are accounting units, not one-to-one ETH. See [Vault shares](/concepts/vault-shares).
+A proportional position recorded by DefinomiCore, backed by Vault shares that Core holds in aggregate. Shares are accounting units, not one-to-one ETH. See [Vault shares](/concepts/vault-shares).
 
 ### How do rewards reach me?
 
@@ -84,7 +84,7 @@ Do not count on it. Early unlocking may be impossible, even in adverse market, v
 
 ### What does the treasury do to my shares?
 
-Definica's multisig can donate ETH to the Vault, which raises assets per share by `D / S` at the next successful harvest, or burn its own shares, which raises the value of every other share by `B / (S − B)`. It never touches user balances, and neither route is a guaranteed return. See [Treasury policy](/phase-1/treasury-policy).
+Definomi's multisig can donate ETH to the Vault, which raises assets per share by `D / S` at the next successful harvest, or burn its own shares, which raises the value of every other share by `B / (S − B)`. It never touches user balances, and neither route is a guaranteed return. See [Treasury policy](/phase-1/treasury-policy).
 
 ## osETH and aEthosETH
 
@@ -100,7 +100,7 @@ No. aEthosETH does not create a second ETH deposit or duplicate the osETH stakin
 
 ### What is the Main Liquidity Module?
 
-The Phase 2 layer that records committed aEthosETH positions, any allocated Aave debt, income and withdrawal conditions. With your authorisation, it can borrow WETH or another permitted asset against the position to supply Definica's lending markets. See [Main Liquidity Module](/concepts/main-liquidity-module).
+The Phase 2 layer that records committed aEthosETH positions, any allocated Aave debt, income and withdrawal conditions. With your authorisation, it can borrow WETH or another permitted asset against the position to supply Definomi's lending markets. See [Main Liquidity Module](/concepts/main-liquidity-module).
 
 ### Does committing aEthosETH make it collateral?
 
@@ -118,7 +118,7 @@ Repay Aave with the asset owed, withdraw aEthosETH to osETH (subject to Aave liq
 
 ### How is lending interest split?
 
-Of the lending interest attributable to you, 75% is allocated to you and 25% to Definica, before financing costs. Your net result is `0.75 × I_u − funding costs − other costs`, which can be negative. See [Economics](/phase-3/economics).
+Of the lending interest attributable to you, 75% is allocated to you and 25% to Definomi, before financing costs. Your net result is `0.75 × I_u − funding costs − other costs`, which can be negative. See [Economics](/phase-3/economics).
 
 ### What can I borrow against?
 
@@ -134,14 +134,14 @@ No. Correlation with ETH does not remove price, liquidity, oracle, redemption or
 
 ## Security and control
 
-### Has Definica been audited?
+### Has Definomi been audited?
 
-DefinicaCore and EthPooledStakingVault have been reviewed in two private audits, and reports are provided on request through security@definica.com. StakeWise's upstream EthFoxVault review covers EthFoxVault, not Definica's changes. No audit guarantees that a contract is secure. See [Audits](/security/audits).
+DefinomiCore and EthPooledStakingVault have been reviewed in two private audits, and reports are provided on request through security@definomi.com. StakeWise's upstream EthFoxVault review covers EthFoxVault, not Definomi's changes. No audit guarantees that a contract is secure. See [Audits](/security/audits).
 
 ### Who controls upgrades?
 
-DefinicaCore has a distinct admin and upgrade authoriser, with one pre-authorised implementation at a time. The Vault has its own admin and can only move to StakeWise-DAO-registered implementations, one version at a time. Every role holder is readable onchain. See [Control model](/security/control-model).
+DefinomiCore has a distinct admin and upgrade authoriser, with one pre-authorised implementation at a time. The Vault has its own admin and can only move to StakeWise-DAO-registered implementations, one version at a time. Every role holder is readable onchain. See [Control model](/security/control-model).
 
 ### Where do I verify addresses and ask questions?
 
-Check addresses on [Verify addresses](/security/verify-addresses): your wallet shows the address of the contract each transaction goes to, and that page sets out how to check it on a block explorer before you sign. For questions, write to contact@definica.com, or security@definica.com for security matters. The official accounts are [t.me/definica](https://t.me/definica) and [x.com/definicacom](https://x.com/definicacom).
+Check addresses on [Verify addresses](/security/verify-addresses): your wallet shows the address of the contract each transaction goes to, and that page sets out how to check it on a block explorer before you sign. For questions, write to contact@definomi.com, or security@definomi.com for security matters. The official accounts are [t.me/definomi](https://t.me/definomi) and [x.com/definomicom](https://x.com/definomicom).

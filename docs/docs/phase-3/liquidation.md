@@ -35,7 +35,7 @@ Any liquidation fee is separate from debt repayment and liquidator compensation.
 ## An illustration
 
 :::warning[Illustrative only]
-The threshold below is chosen for the arithmetic. It is not an Aave or Definica value; Aave's current values are read from the Pool.
+The threshold below is chosen for the arithmetic. It is not an Aave or Definomi value; Aave's current values are read from the Pool.
 :::
 
 A position holds 10 ETH-worth of osETH as collateral with a 75% liquidation threshold and owes 6 ETH-worth of WETH:

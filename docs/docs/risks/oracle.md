@@ -1,12 +1,12 @@
 ---
 title: 'Oracle risk'
-description: 'Definica relies on StakeWise''s Oracles for rewards and exits and on price oracles to value collateral, and either can be wrong or late.'
+description: 'Definomi relies on StakeWise''s Oracles for rewards and exits and on price oracles to value collateral, and either can be wrong or late.'
 sidebar_position: 3
 ---
 
 # Oracle risk
 
-Definica relies on two kinds of oracle. StakeWise's Oracle network reports every Vault's rewards and penalties and approves validator operations through the Keeper; price oracles value osETH as collateral at Aave and value collateral in Definica's Phase 3 markets. A wrong, stale or absent report can misstate your position, delay your exit or cause a liquidation that the market price would not have caused.
+Definomi relies on two kinds of oracle. StakeWise's Oracle network reports every Vault's rewards and penalties and approves validator operations through the Keeper; price oracles value osETH as collateral at Aave and value collateral in Definomi's Phase 3 markets. A wrong, stale or absent report can misstate your position, delay your exit or cause a liquidation that the market price would not have caused.
 
 ## StakeWise's Oracles
 

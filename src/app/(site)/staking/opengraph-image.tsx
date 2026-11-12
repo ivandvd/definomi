@@ -1,6 +1,6 @@
 import { OG_CONTENT_TYPE, OG_SIZE, shareImage } from "@/lib/og";
 
-export const alt = "Definica staking — One Vault, your share.";
+export const alt = "Definomi staking — One Vault, your share.";
 export const size = OG_SIZE;
 export const contentType = OG_CONTENT_TYPE;
 

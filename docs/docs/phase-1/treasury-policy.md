@@ -1,12 +1,12 @@
 ---
 title: 'Treasury policy'
-description: 'How Definica''s multisig can raise the value of every Vault share by donating ETH or burning its own shares, with the maths and worked examples.'
+description: 'How Definomi''s multisig can raise the value of every Vault share by donating ETH or burning its own shares, with the maths and worked examples.'
 sidebar_position: 6
 ---
 
 # Treasury policy
 
-Definica's [multisig](/glossary#multisig) can raise the value of every remaining Vault share in two ways: donate ETH to the Vault through Core's [donator role](/glossary#donator-role), which adds assets without minting shares, or burn Vault shares it owns, which reduces supply without removing assets. Both are discretionary and budget-dependent, and neither is a guaranteed APY.
+Definomi's [multisig](/glossary#multisig) can raise the value of every remaining Vault share in two ways: donate ETH to the Vault through Core's [donator role](/glossary#donator-role), which adds assets without minting shares, or burn Vault shares it owns, which reduces supply without removing assets. Both are discretionary and budget-dependent, and neither is a guaranteed APY.
 
 ## The two formulas
 
@@ -53,7 +53,7 @@ Here the user's proportion rises because the total supply fell. A burn needs sha
 ## Rules for contributions
 
 - **Discretionary.** Treasury contributions are discretionary and budget-dependent. They never establish a guaranteed APY.
-- **Funded by Definica.** Contributions come from protocol-owned revenue and an allocated treasury budget, and Definica's multisig executes them.
+- **Funded by Definomi.** Contributions come from protocol-owned revenue and an allocated treasury budget, and Definomi's multisig executes them.
 - **General, not targeted.** Donations benefit the remaining Vault shares generally, and returning fees this way is a rebate. A donation is never a payment to a particular user.
 - **No lock bonus.** A Vault donation creates no exclusive bonus for lockers. Lock incentives for aEthosETH commitments have their own budget and allocation rules.
 - **Not a buyback.** Vault shares are internal accounting units, not a conventional secondary-market buyback asset.
