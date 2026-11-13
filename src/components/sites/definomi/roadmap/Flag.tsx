@@ -2,7 +2,7 @@ import { icons } from "../shared/icons";
 import { INK } from "./Blob";
 import { PALETTE } from "./Pieces";
 
-/** The Definomi mark's paths (ink D, lime diamond), without the outer `<svg>`. */
+/** The Definomi mark's path (the D with the asterisk cut out), without the outer `<svg>`. */
 const MARK = icons["definomi-mark"].replace(/^<svg[^>]*>/, "").replace(/<\/svg>\s*$/, "");
 
 interface FlagProps {
@@ -31,7 +31,7 @@ export function Flag({ className, clothClass, raiseClass }: FlagProps) {
             y="13.5"
             width="17"
             height="17"
-            viewBox="-1.3 0 24 24"
+            viewBox="-1.87 0 24 24"
             style={{ color: "#0f0f0f" }}
             dangerouslySetInnerHTML={{ __html: MARK }}
           />

@@ -1,6 +1,6 @@
 import type { CSSProperties, ReactNode } from "react";
 import { cn } from "@/lib/utils";
-import { MARK_D, MARK_SLASH } from "./brand";
+import { MARK_D } from "./brand";
 
 /*
  * The action panels' scenes, in the landing page's sticker style (flat pastels, a thin ink line,
@@ -31,9 +31,8 @@ export function Share() {
   return (
     <g>
       <circle r="10.5" fill={INK} {...LINE} />
-      <g transform="translate(-6 -6.4) scale(0.53)">
+      <g transform="translate(-5.3689 -6.36) scale(0.53)">
         <path fillRule="evenodd" clipRule="evenodd" d={MARK_D} fill="#d1f500" />
-        <path d={MARK_SLASH} fill="#d1f500" />
       </g>
     </g>
   );
@@ -154,9 +153,8 @@ export function StakeFactory({ active = false, done = false, className }: { acti
       </g>
 
       <rect x="132" y="76" width="36" height="16" rx="8" fill={INK} {...LINE} />
-      <g transform="translate(144.4 78.4) scale(0.47)">
+      <g transform="translate(145.2389 78.36) scale(0.47)">
         <path fillRule="evenodd" clipRule="evenodd" d={MARK_D} fill="#d1f500" />
-        <path d={MARK_SLASH} fill="#d1f500" />
       </g>
       <path d="M140 162v-24a10 10 0 0 1 20 0v24" fill="#fbe74e" {...LINE} />
 

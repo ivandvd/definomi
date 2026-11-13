@@ -29,36 +29,27 @@ export const glyphSrc = (glyph: GlyphName) => `${GLYPHS}/${glyph}.svg`;
 export const STAKEWISE_LOGO = `${ASSET_BASE}/images/stakewise-logo.png`;
 
 const MARK_D =
-  "M9.12705 0.252278C10.8655 0.252278 12.4782 0.553437 13.9651 1.15575C15.4519 1.73576 16.7444 2.56116 17.8424 3.63194C18.9632 4.68042 19.8325 5.91851 20.4501 7.34622C21.0677 8.75163 21.3765 10.2909 21.3765 11.964C21.3765 13.6148 21.0677 15.154 20.4501 16.5817C19.8325 18.0095 18.9747 19.2587 17.8767 20.3295C16.7787 21.378 15.4862 22.2034 13.9994 22.8057C12.5125 23.3857 10.9113 23.6757 9.19568 23.6757H1.78138C0.797549 23.6757 0 22.869 0 21.8739V2.05408C0 1.05897 0.797549 0.252278 1.78138 0.252278H9.12705ZM9.38556 5.45784L3.9263 11.3478C3.6051 11.6944 3.6051 12.2336 3.9263 12.5801L4.48495 13.1829L5.90247 14.7122L9.38556 18.4701C9.73745 18.8498 10.3333 18.8498 10.6851 18.4701L16.1444 12.5801C16.4656 12.2336 16.4656 11.6944 16.1444 11.3478L15.6535 10.8182L14.236 9.28886L10.6851 5.45784C10.3333 5.07819 9.73745 5.07819 9.38556 5.45784Z";
-const MARK_SLASH =
-  "M16.9295 10.3087L15.6535 10.8182L5.90247 14.7122L3.93511 15.4979L3.21179 13.6913L4.48495 13.1829L14.236 9.28886L16.2061 8.50211L16.9295 10.3087Z";
-const MARK_LOWER =
-  "M10.6851 18.4701L16.1444 12.5801C16.4656 12.2336 16.4656 11.6944 16.1444 11.3478L15.6535 10.8182L5.90247 14.7122L9.38556 18.4701C9.73745 18.8498 10.3333 18.8498 10.6851 18.4701Z";
-const MARK_UPPER =
-  "M9.38556 5.45784L3.9263 11.3478C3.6051 11.6944 3.6051 12.2336 3.9263 12.5801L4.48495 13.1829L14.236 9.28886L10.6851 5.45784C10.3333 5.07819 9.73745 5.07819 9.38556 5.45784Z";
-/** The mark's upper lime triangle on its own (bounds about 3.7–14.3 x 5.2–13.2). */
-export const DEFINOMI_TRIANGLE = MARK_UPPER;
+  "M0 0.25H10.3A11.7128 11.7128 0 0 1 10.3 23.6757H0ZM11.18 13.7815L11.63 18.4128L8.63 18.4128L9.08 13.7815L5.2941 16.4869L3.7941 13.8888L8.03 11.9628L3.7941 10.0369L5.2941 7.4388L9.08 10.1442L8.63 5.5128L11.63 5.5128L11.18 10.1442L14.9659 7.4388L16.4659 10.0369L12.23 11.9628L16.4659 13.8888L14.9659 16.4869Z";
+const MARK_STAR =
+  "M11.18 13.7815L11.63 18.4128L8.63 18.4128L9.08 13.7815L5.2941 16.4869L3.7941 13.8888L8.03 11.9628L3.7941 10.0369L5.2941 7.4388L9.08 10.1442L8.63 5.5128L11.63 5.5128L11.18 10.1442L14.9659 7.4388L16.4659 10.0369L12.23 11.9628L16.4659 13.8888L14.9659 16.4869Z";
+/** The mark's asterisk on its own, as a spark, centred in a 12 × 12 box. */
+export const DEFINOMI_SPARK =
+  "M7.1 7.9053L7.2 11.4L4.8 11.4L4.9 7.9053L1.9235 9.7392L0.7235 7.6608L3.8 6L0.7235 4.3392L1.9235 2.2608L4.9 4.0947L4.8 0.6L7.2 0.6L7.1 4.0947L10.0765 2.2608L11.2765 4.3392L8.2 6L11.2765 7.6608L10.0765 9.7392Z";
 
 interface MarkProps {
   className?: string;
-  /** Colour of the D and its slash. */
+  /** Colour of the D. */
   color?: string;
-  /** Colour of the two diamond halves; `null` leaves them open so the background shows through. */
+  /** Fills the asterisk (lime on light backgrounds); `null` leaves it open so the background shows through. */
   accent?: string | null;
 }
 
-/** The Definomi "D" mark (from the definomi.com wordmark). */
+/** The Definomi "D" mark: a solid D with the asterisk cut out, boxed so the asterisk (its optical centre) sits in the middle. */
 export function DefinomiMark({ className, color = "#002012", accent = "#d1f500" }: MarkProps) {
   return (
-    <svg className={className} viewBox="-0.6 0 22.6 24" aria-hidden="true" focusable="false">
+    <svg className={className} viewBox="-1.7528 0 23.7657 24" aria-hidden="true" focusable="false">
       <path fillRule="evenodd" clipRule="evenodd" d={MARK_D} fill={color} />
-      <path d={MARK_SLASH} fill={color} />
-      {accent ? (
-        <>
-          <path d={MARK_LOWER} fill={accent} />
-          <path d={MARK_UPPER} fill={accent} />
-        </>
-      ) : null}
+      {accent ? <path d={MARK_STAR} fill={accent} /> : null}
     </svg>
   );
 }
@@ -251,7 +242,7 @@ export function TopBar({ right }: { right?: ReactNode }) {
   return (
     <div className={styles.topBar}>
       <span className={styles.iconButton}>
-        <DefinomiMark color="#002012" accent="#d1f500" />
+        <DefinomiMark color="#002012" />
       </span>
       {right ?? (
         <span className={styles.networkPill}>
@@ -279,9 +270,8 @@ export function BottomNav({ dataEl }: { dataEl?: string }) {
           d="M23.5 3.2a7 7 0 0 1 7 0l15.3 8.8a7 7 0 0 1 3.5 6.1v17.7a7 7 0 0 1-3.5 6.1L30.5 50.8a7 7 0 0 1-7 0L8.2 41.9a7 7 0 0 1-3.5-6.1V18.1a7 7 0 0 1 3.5-6.1Z"
           fill="#002012"
         />
-        <g transform="translate(17.3 15.4) scale(0.92)">
+        <g transform="translate(17.6804 15.96) scale(0.92)">
           <path fillRule="evenodd" clipRule="evenodd" d={MARK_D} fill="#d1f500" />
-          <path d={MARK_SLASH} fill="#d1f500" />
         </g>
       </svg>
       <span className={styles.navItem}>

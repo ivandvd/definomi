@@ -1,5 +1,5 @@
 import { gsap } from "../../shared/gsap";
-import { DEFINOMI_TRIANGLE, DefinomiMark, EthDiamond, PercentIcon, TargetIcon } from "../phone/kit";
+import { DEFINOMI_SPARK, DefinomiMark, EthDiamond, PercentIcon, TargetIcon } from "../phone/kit";
 import { allEl, byEl, centerIn, countSteps, countUp } from "../phone/motion";
 import { RingPops, Station, Tag, absorb, flash, popIn, popOut, release } from "./motionKit";
 import styles from "./scenes.module.css";
@@ -58,10 +58,10 @@ const ServerGlyph = ({ className }: { className: string }) => (
   </svg>
 );
 
-/** A validator's status light: the Definomi triangle, lime while the validator is healthy. */
+/** A validator's status light: the Definomi spark, lime while the validator is healthy. */
 const StatusLight = ({ className }: { className: string }) => (
-  <svg className={className} viewBox="2.9 4.4 12.2 9.6" aria-hidden="true">
-    <path data-el="dotShape" d={DEFINOMI_TRIANGLE} fill={LIGHT_ON} stroke={INK} strokeWidth="0.8" strokeLinejoin="round" />
+  <svg className={className} viewBox="0 0 12 12" aria-hidden="true">
+    <path data-el="dotShape" d={DEFINOMI_SPARK} fill={LIGHT_ON} stroke={INK} strokeWidth="0.8" strokeLinejoin="round" />
   </svg>
 );
 

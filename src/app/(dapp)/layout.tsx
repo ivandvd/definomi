@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./dapp.css";
 import { DappProvider } from "@/components/dapp/providers/DappProvider";
 import { AppShell } from "@/components/dapp/shell/AppShell";
-import { MARK_D, MARK_SLASH } from "@/components/dapp/ui/brand";
+import { MARK_D } from "@/components/dapp/ui/brand";
 import { INDEXABLE, SITE_URL } from "@/lib/site";
 
 const description = "Stake ETH in the Definomi Vault, follow every layer of your position, and unstake when you choose.";
@@ -42,9 +42,8 @@ export default function DappRootLayout({ children }: Readonly<{ children: React.
         <div className="launch-curtain" aria-hidden="true">
           <div className="launch-lime" />
           <div className="launch-ink">
-            <svg className="launch-mark" viewBox="-0.6 0 22.6 24" focusable="false">
+            <svg className="launch-mark" viewBox="-1.7528 0 23.7657 24" focusable="false">
               <path fillRule="evenodd" clipRule="evenodd" d={MARK_D} fill="#d1f500" />
-              <path d={MARK_SLASH} fill="#d1f500" />
             </svg>
           </div>
         </div>

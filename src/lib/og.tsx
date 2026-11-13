@@ -23,19 +23,16 @@ const CORAL = "#ff5a4d";
 const BLOB = "M12.4 2.3c3.5-.2 7.6 1.6 8.9 5 1.2 3.1-.3 5.4.2 8.2.4 2.7-2 5.6-5.4 6.1-3 .4-4.6-1.3-7.6-1.1-3 .2-5.6-1.7-6.1-4.9-.5-3.1 1.6-4.4 1.6-7.4C4 4.9 7.9 2.5 12.4 2.3Z";
 const SPARKLE = "M12 1.5C12.8 7.4 16.6 11.2 22.5 12 16.6 12.8 12.8 16.6 12 22.5 11.2 16.6 7.4 12.8 1.5 12 7.4 11.2 11.2 7.4 12 1.5Z";
 const MARK_D =
-  "M9.12705 0.252278C10.8655 0.252278 12.4782 0.553437 13.9651 1.15575C15.4519 1.73576 16.7444 2.56116 17.8424 3.63194C18.9632 4.68042 19.8325 5.91851 20.4501 7.34622C21.0677 8.75163 21.3765 10.2909 21.3765 11.964C21.3765 13.6148 21.0677 15.154 20.4501 16.5817C19.8325 18.0095 18.9747 19.2587 17.8767 20.3295C16.7787 21.378 15.4862 22.2034 13.9994 22.8057C12.5125 23.3857 10.9113 23.6757 9.19568 23.6757H1.78138C0.797549 23.6757 0 22.869 0 21.8739V2.05408C0 1.05897 0.797549 0.252278 1.78138 0.252278H9.12705ZM9.38556 5.45784L3.9263 11.3478C3.6051 11.6944 3.6051 12.2336 3.9263 12.5801L4.48495 13.1829L5.90247 14.7122L9.38556 18.4701C9.73745 18.8498 10.3333 18.8498 10.6851 18.4701L16.1444 12.5801C16.4656 12.2336 16.4656 11.6944 16.1444 11.3478L15.6535 10.8182L14.236 9.28886L10.6851 5.45784C10.3333 5.07819 9.73745 5.07819 9.38556 5.45784Z";
-const MARK_SLASH = "M16.9295 10.3087L15.6535 10.8182L5.90247 14.7122L3.93511 15.4979L3.21179 13.6913L4.48495 13.1829L14.236 9.28886L16.2061 8.50211L16.9295 10.3087Z";
-const MARK_LOWER = "M10.6851 18.4701L16.1444 12.5801C16.4656 12.2336 16.4656 11.6944 16.1444 11.3478L15.6535 10.8182L5.90247 14.7122L9.38556 18.4701C9.73745 18.8498 10.3333 18.8498 10.6851 18.4701Z";
-const MARK_UPPER = "M9.38556 5.45784L3.9263 11.3478C3.6051 11.6944 3.6051 12.2336 3.9263 12.5801L4.48495 13.1829L14.236 9.28886L10.6851 5.45784C10.3333 5.07819 9.73745 5.07819 9.38556 5.45784Z";
+  "M0 0.25H10.3A11.7128 11.7128 0 0 1 10.3 23.6757H0ZM11.18 13.7815L11.63 18.4128L8.63 18.4128L9.08 13.7815L5.2941 16.4869L3.7941 13.8888L8.03 11.9628L3.7941 10.0369L5.2941 7.4388L9.08 10.1442L8.63 5.5128L11.63 5.5128L11.18 10.1442L14.9659 7.4388L16.4659 10.0369L12.23 11.9628L16.4659 13.8888L14.9659 16.4869Z";
+const MARK_STAR =
+  "M11.18 13.7815L11.63 18.4128L8.63 18.4128L9.08 13.7815L5.2941 16.4869L3.7941 13.8888L8.03 11.9628L3.7941 10.0369L5.2941 7.4388L9.08 10.1442L8.63 5.5128L11.63 5.5128L11.18 10.1442L14.9659 7.4388L16.4659 10.0369L12.23 11.9628L16.4659 13.8888L14.9659 16.4869Z";
 
-/** The ink mark with its lime diamond, as in the header logo. */
+/** The ink mark with its lime asterisk, as in the header logo. */
 function Mark({ size }: { size: number }) {
   return (
-    <svg width={size} height={size} viewBox="-1.3 0 24 24">
+    <svg width={size} height={size} viewBox="-1 0 24 24">
       <path fillRule="evenodd" clipRule="evenodd" d={MARK_D} fill={INK} />
-      <path d={MARK_SLASH} fill={INK} />
-      <path d={MARK_LOWER} fill={LIME} />
-      <path d={MARK_UPPER} fill={LIME} />
+      <path d={MARK_STAR} fill={LIME} />
     </svg>
   );
 }
@@ -56,18 +53,16 @@ function Sparkle({ size, fill, x, y }: { size: number; fill: string; x: number; 
   );
 }
 
-/** Home: the inverted mark, large, among blobs. */
+/** Home: the mark, large, among blobs. */
 function MarkGraphic() {
   return (
     <div style={{ position: "relative", display: "flex", width: 470, height: 470 }}>
       <svg width={430} height={430} viewBox="0 0 24 24" style={{ position: "absolute", left: 20, top: 30 }}>
         <path d={BLOB} fill="#f4fbcc" />
       </svg>
-      <svg width={300} height={300} viewBox="-1.3 0 24 24" style={{ position: "absolute", left: 95, top: 95 }}>
-        <path fillRule="evenodd" clipRule="evenodd" d={MARK_D} fill={LIME} />
-        <path d={MARK_SLASH} fill={LIME} />
-        <path d={MARK_LOWER} fill={INK} />
-        <path d={MARK_UPPER} fill={INK} />
+      <svg width={300} height={300} viewBox="-1 0 24 24" style={{ position: "absolute", left: 95, top: 95 }}>
+        <path fillRule="evenodd" clipRule="evenodd" d={MARK_D} fill={INK} />
+        <path d={MARK_STAR} fill={LIME} />
       </svg>
       <Blob size={70} fill={SKY} x={20} y={40} />
       <Blob size={52} fill={BABY} x={370} y={20} />

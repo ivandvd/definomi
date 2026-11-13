@@ -3,7 +3,7 @@
 import { useEffect, useId, useState, type CSSProperties, type ReactNode } from "react";
 import { cn } from "@/lib/utils";
 import type { Asset } from "../lib/types";
-import { MARK_D, MARK_SLASH } from "./brand";
+import { MARK_D } from "./brand";
 import { INK, LINE as SCENE_LINE, Sparkle } from "./scenes";
 
 /*
@@ -55,9 +55,8 @@ function Token({ asset, r }: { asset: Asset | null; r: number }) {
     return (
       <g>
         <circle r={r} fill={INK} {...LINE} />
-        <g transform={`translate(${-6 * k} ${-6.4 * k}) scale(${0.53 * k})`}>
+        <g transform={`translate(${-5.3689 * k} ${-6.36 * k}) scale(${0.53 * k})`}>
           <path fillRule="evenodd" clipRule="evenodd" d={MARK_D} fill={C.lime} />
-          <path d={MARK_SLASH} fill={C.lime} />
         </g>
       </g>
     );
