@@ -39,9 +39,9 @@ Three Definomi surfaces in one repo:
 - `NEXT_PUBLIC_NEWSLETTER_ENDPOINT`: where sign-ups are posted; unset, the footer shows Telegram and X instead of the form.
 
 ## Deployment (Vercel, team JulianTeam)
-The Vercel projects keep their old names, `definica` and `definica-docs`. Their old addresses (`definica-flame`, `app-definica`, `docs-definica` and `definica-docs.vercel.app`) redirect to the new ones below. Both projects deploy on every push to `main`:
-- **`definica`** (the repo root: site and app) answers at `definomi-flame.vercel.app` (the website) and `app-definomi.vercel.app` (the app: its root opens `/app`, and `/app` on the website redirects there). Production env: `NEXT_PUBLIC_SITE_URL`, `DAPP_URL` (`…/app`), `DOCS_URL` and `NEXT_PUBLIC_DOCS_URL`. With `DAPP_URL` set, `next.config.ts` redirects by host, and Launch App always passes `?launch=1` so the curtain survives the hop.
-- **`definica-docs`** (root directory `docs/`) answers at `docs-definomi.vercel.app`; `/docs` on the website redirects there. Its links to the website and the app come from `SITE_URL` / `APP_URL` at build time (defaults: the Vercel addresses above); `DOCUSAURUS_NO_PERSISTENT_CACHE=true` avoids a build that stalls on a stale cache.
+The GitHub repo is `ivandvd/definomi`. The old Vercel addresses (`definica-flame`, `app-definica`, `docs-definica` and `definica-docs.vercel.app`) redirect to the new ones below. Both projects deploy on every push to `main`:
+- **`definomi`** (the repo root: site and app) answers at `definomi-flame.vercel.app` (the website) and `app-definomi.vercel.app` (the app: its root opens `/app`, and `/app` on the website redirects there). Production env: `NEXT_PUBLIC_SITE_URL`, `DAPP_URL` (`…/app`), `DOCS_URL` and `NEXT_PUBLIC_DOCS_URL`. With `DAPP_URL` set, `next.config.ts` redirects by host, and Launch App always passes `?launch=1` so the curtain survives the hop.
+- **`definomi-docs`** (root directory `docs/`) answers at `docs-definomi.vercel.app`; `/docs` on the website redirects there. Its links to the website and the app come from `SITE_URL` / `APP_URL` at build time (defaults: the Vercel addresses above); `DOCUSAURUS_NO_PERSISTENT_CACHE=true` avoids a build that stalls on a stale cache.
 - `vercel.app` addresses are one level only (no `app.app-definomi…`). When definomi.com moves to Vercel, point the env vars at `definomi.com`, `app.definomi.com/app` and `docs.definomi.com`, and set `SITE_URL` / `APP_URL` on the docs project.
 
 ## Launch essentials (where they live)
