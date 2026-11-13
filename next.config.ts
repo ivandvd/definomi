@@ -5,7 +5,7 @@ type Redirects = Awaited<ReturnType<NonNullable<NextConfig["redirects"]>>>;
 /**
  * Where the app and the docs live on their own addresses (see .env.example). Unset, `/app` is
  * served here and `/docs` expects the docs site to be proxied there. DAPP_URL may name another
- * address of this same deployment (app-definica.vercel.app/app): there its root opens the app.
+ * address of this same deployment (app-definomi.vercel.app/app): there its root opens the app.
  */
 const DAPP_URL = process.env.DAPP_URL?.replace(/\/$/, "");
 const DOCS_URL = process.env.DOCS_URL;

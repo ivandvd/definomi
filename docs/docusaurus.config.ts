@@ -19,8 +19,8 @@ const FONT = '"Tomato Grotesk", Arial, sans-serif';
  * definomi.com; until then they are the Vercel addresses. Markdown can use {{SITE_URL}} and
  * {{APP_URL}} in links.
  */
-const SITE_URL = (process.env.SITE_URL ?? 'https://definica-flame.vercel.app').replace(/\/$/, '');
-const APP_URL = (process.env.APP_URL ?? 'https://app-definica.vercel.app/app').replace(/\/$/, '');
+const SITE_URL = (process.env.SITE_URL ?? 'https://definomi-flame.vercel.app').replace(/\/$/, '');
+const APP_URL = (process.env.APP_URL ?? 'https://app-definomi.vercel.app/app').replace(/\/$/, '');
 
 const config: Config = {
   title: 'Definomi Docs',
